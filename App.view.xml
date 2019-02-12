@@ -1,0 +1,200 @@
+<mvc:View
+    height="100%"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:t="sap.ui.table"
+    xmlns:f="sap.f"
+    xmlns:tnt="sap.tnt"
+    xmlns:unified="sap.ui.unified"
+    controllerName="BNetSapUI5.App"
+    class="sapUiSizeCompact">
+    <App>
+        <Page id="dashboardToDoListPageID" showHeader="false">
+            <l:FixFlex>
+                <l:fixContent>
+                    <OverflowToolbar>
+                        <Label class="dashboard-todoListView-title" text="Sample List"/>
+                        <ToolbarSpacer/>
+                        <Button
+                             icon="sap-icon://add" 
+                             tooltip="Add New Ticket" 
+                             type="Transparent"
+                             press="openDialogAdd"/>
+                        <Button
+                            icon="sap-icon://filter"
+                            tooltip="Filtering"
+                            type="Transparent"
+                            press="onFilterToDoList"/>
+                        <Button
+                            icon="sap-icon://group-2"
+                            tooltip="Grouping"
+                            type="Transparent"
+                            press="onGroupToDoList"/>
+                        <Button
+                            icon="sap-icon://refresh"
+                            tooltip="Refresh"
+                            type="Transparent"
+                            press="getToDoList"/>
+                        <OverflowToolbarToggleButton
+                            icon="sap-icon://search"
+                            tooltip="Search Ticket"
+                            type="Transparent"
+                            press="onToggleToDoSearchInputVisibility"/>
+                    </OverflowToolbar>
+                    <IconTabBar
+                        id="dashboardToDoTabBarId"
+                        expandable="false"
+                        showOverflowSelectList="true"
+                        headerMode="Inline"
+                        tabDensityMode="Compact"
+                        applyContentPadding="false"
+                        select="tabBarSelected"
+                        class="sapUiNoContentPadding sapUiNoMargin">
+                        <items>
+                            <IconTabFilter key="TO" text="Works"></IconTabFilter>
+                            <IconTabFilter key="FROM" text="Assigned"></IconTabFilter>
+                            <IconTabFilter key="CC" text="Info"></IconTabFilter>
+                        </items>
+                    </IconTabBar>
+                    <SearchField
+                        id="dashboardToDoSearchInputId"
+                        visible="{/DashboardToDoSearchInputVisibility}"
+                        class="sapUiSmallMarginBottom"
+                        liveChange="onSearchFilteringToDoList"/>
+                </l:fixContent>
+                <l:flexContent>
+                    <NavContainer id="varyantContainer" class="sapUiNoMargin">
+                        <Page id="TO" class="sapUiResponsiveContentPadding" showHeader="false" enableScrolling="false">
+                            <ScrollContainer
+                                height="100%"
+                                width="100%"
+                                horizontal="false"
+                                vertical="true"
+                                focusable="false"
+                                class="sapUiNoContentPadding sapUiNoMargin sapUiSmallMarginTopBottom">
+                                <l:Grid position="Left" defaultSpan="XL12 L12 M12 S12" width="100%">
+                                    <List id="userList" items="{/UserListModel}">
+                                        <items>
+                                            <CustomListItem class="sociallistbackground" type="Active">
+                                                <HBox alignItems="Center" width="100%">
+                                                    <f:Avatar src="{avatar}" displaySize="XS" class="sapUiTinyMarginBeginEnd"/>
+                                                    <VBox
+                                                        alignItems="Stretch"
+                                                        justifyContent="Center"
+                                                        width="100%"
+                                                        class="sapUiTinyMarginEnd">
+                                                        <Text text="{name}" class="user-"/>
+                                                        <Text text="{description}" class="message-body" maxLines="2"/>
+                                                        <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween">
+                                                            <HBox alignItems="Center" justifyContent="Start">
+                                                                <HBox alignItems="Center" justifyContent="Start">
+                                                                    <core:Icon src="sap-icon://circle-task-2" size="8px" color="{statusColor}"/>
+                                                                    <Text text="{statusText}" class="sapUiTinyMarginBegin message-body"/>
+                                                                </HBox>
+                                                                <HBox alignItems="Center" justifyContent="Start" class="sapUiTinyMarginBegin">
+                                                                    <core:Icon src="sap-icon://flag" size="8px" color="{prioColor}"/>
+                                                                    <Text text="{prioText}" class="sapUiTinyMarginBegin message-body"/>
+                                                                </HBox>
+                                                            </HBox>
+                                                            <Text text="{lastChangeTime}" class="time"/>
+                                                        </HBox>
+                                                    </VBox>
+                                                </HBox>
+                                            </CustomListItem>
+                                            </items>
+                                    </List>
+                                </l:Grid>
+                            </ScrollContainer>
+                        </Page>    
+                        <Page id="FROM" class="sapUiResponsiveContentPadding" showHeader="false" enableScrolling="false">                           
+                            <Table
+                                id="productsCollection"
+                                items="{/ProductsCollection}"
+                                sticky="HeaderToolbar,ColumnHeaders">
+                                <columns>
+                                    <Column>
+                                        <Text text="Masraf Tanımı"/>
+                                    </Column>
+                                    <Column>
+                                        <Text text="Alt Masraf"/>
+                                    </Column>
+                                    <Column>
+                                        <Text text="Açıklama"/>
+                                    </Column>
+                                    <Column>
+                                        <Text text="Masraf Tutarı"/>
+                                    </Column>
+                                    <Column>
+                                        <Text text="Ödenecek Tutar"/>
+                                    </Column>
+                                    <Column>
+                                        <Text text="Çeviri Kuru"/>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem>
+                                        <cells>
+                                            <Text text="{1}"/>
+                                            <Text text="{1}"/>
+                                            <Text text="{2}"/>
+                                            <Text text="{3}"/>
+                                            <Text text="{4}"/>
+                                            <Text text="{5}"/>
+
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </Page> 
+                        <Page id="CC" class="sapUiResponsiveContentPadding" showHeader="false" enableScrolling="false">
+                              <VBox alignItems="Start" justifyContent="Start">
+                                <Label text="Add Cost Window Cost List" class="sapUiTinyMarginBottom" />
+                                    <Table
+                                        id="tablelist"
+                                        inset="false"
+                                        items="{/UserListModel2}"
+                                        >
+                                        <columns>
+                                            <Column width="12em">
+                                                <Text text="1"/>
+                                            </Column>
+                                            <Column width="12em">
+                                                <Text text="2"/>
+                                            </Column>
+                                            <Column width="12em">
+                                                <Text text="3"/>
+                                            </Column>
+                                            <Column width="12em">
+                                                <Text text="4"/>
+                                            </Column>
+                                            <Column hAlign="End">
+                                                <Text text="5"/>
+                                            </Column>
+                                        </columns>
+                                        <items>
+                                            <ColumnListItem>
+                                                <cells>
+                                                    <ObjectIdentifier title="{person}"/>
+                                                    <Text text="{person}"/>
+                                                    <Text text="{person}"/>
+                                                    <ObjectNumber
+                                                       unit="{person}"
+                                                    />
+                                                    <ObjectNumber
+                                                        number="{person}"   
+                                                    />      
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </VBox>
+                        </Page> 
+                    </NavContainer>   
+                </l:flexContent>
+            </l:FixFlex>
+        </Page>
+        
+    </App>
+</mvc:View>
