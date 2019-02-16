@@ -1,0 +1,40 @@
+/*Burada .sapMPageHeader::before 'dan gelen title üzerindeki border' kaldırdık.*/
+.sapMPageHeader::before{ 
+    border-top: none !important;
+}
+
+.header-border .sapUiTheme-sap_bluecrystal{
+    background-color: #ffffff !important;
+}
+
+.page-color.sapUiBody {
+    background-color: #ffffff !important;
+}
+
+.personalInfoContainer{
+    border-bottom: 2px solid red;
+    -webkit-text-fill-color: rgb(255, 72, 0) !important;
+}
+
+.personalInfoContainer2{
+    border-bottom: 2px solid  rgb(5, 179, 92);
+    -webkit-text-fill-color:   rgb(5, 179, 92) !important;
+}
+
+.personalInfoContainer3{
+    border-bottom: 2px solid  rgb(46, 106, 218) ;
+    -webkit-text-fill-color: rgb(46, 106, 218) !important;
+}
+
+/*IconTab'ın Altında oluşan çift çizgiyi ve boşluğu kaldırdık */
+.page-icontabbar-header .sapMITBContent{
+    padding: 0rem !important;
+    border-bottom: none !important;
+}
+
+/*IconTab'ın Altında oluşan çizgiyi kaldırdık */
+.page-icontabbar-header  .sapMITH{
+    border-bottom: none !important;
+}
+
+
