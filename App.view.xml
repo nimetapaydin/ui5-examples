@@ -56,7 +56,7 @@
                             <IconTabFilter key="TO" text="Liste Örneği"></IconTabFilter>
                             <IconTabFilter key="FROM" text="Table Örneği"></IconTabFilter>
                             <IconTabFilter key="CC" text="Table Örneği 2"></IconTabFilter>
-                            
+                            <IconTabFilter key="jsiletable" text="Js ile Table Örneği"></IconTabFilter>
                         </items>
                     </IconTabBar>
                     <SearchField
@@ -313,64 +313,66 @@
                             <Table
                                 id="userTable"
                                 items="{/UserListModel}"
-                                sticky="HeaderToolbar,ColumnHeaders">
+                                >
                                 <columns>
+                                    <Column>
+                                        <Text text="Id"/>
+                                    </Column>
                                     <Column>
                                         <Text text="Masraf Tanımı"/>
                                     </Column>
                                     <Column>
-                                        <Text text="Alt Masraf"/>
+                                        <Text text="Kişi"/>
                                     </Column>
                                     <Column>
+                                        <Text text="E-mail"/>
+                                    </Column>
+                                    <Column hAlign="Start">
                                         <Text text="Açıklama"/>
                                     </Column>
-                                    <Column>
+                                    <Column hAlign="Center">
                                         <Text text="Masraf Tutarı"/>
-                                    </Column>
-                                    <Column>
-                                        <Text text="Ödenecek Tutar"/>
-                                    </Column>
-                                    <Column>
-                                        <Text text="Çeviri Kuru"/>
                                     </Column>
                                 </columns>
                                 <items>
                                     <ColumnListItem>
                                         <cells>
+                                            <Text text="{id}"/>  
+                                            <Text text="{mtanım}"/>
                                             <Text text="{name}"/>
-                                            <Text text="{level}"/>
+                                            <Text text="{email}"/>
                                             <Text text="{description}"/>
-                                            <Text text="{3}"/>
-                                            <Text text="{4}"/>
-                                            <Text text="{5}"/>
-
+                                            <Text text="{mtutarı}"/>
                                         </cells>
                                     </ColumnListItem>
                                 </items>
                             </Table>
                         </Page> 
                         <Page id="CC" class="sapUiResponsiveContentPadding" showHeader="false" enableScrolling="false">
-                              <VBox alignItems="Start" justifyContent="Start">
+                            <VBox alignItems="Start" justifyContent="Start">
                                 <Label text="Table Örneği" class="sapUiTinyMarginBottom" />
                                     <Table
                                         id="userTable2"
                                         items="{/UserListModel}"                                    
                                         >
                                         <columns>
-                                            <Column width="12em">
-                                                <Text text="id"/>
+                                            <Column width="3em">                                             
+                                                <Text text="id" />
                                             </Column>
-                                            <Column width="12em">
+                                            <Column hAlign="Center">
                                                 <Text text="name"/>
                                             </Column>
-                                            <Column width="12em">
+                                            <Column>
                                                 <Text text="email"/>
                                             </Column>
-                                            <Column width="12em">
+                                            <Column hAlign="Center">
                                                 <Text text="level"/>
                                             </Column>
-                                            <Column hAlign="End">
-                                                <Text text="description"/>
+                                             <Column hAlign="Center">
+                                                <Text text="Maaş"/>
+                                            </Column>
+                                            <Column hAlign="Start">
+                                                <Label text="Açıklma" wrapping="true"/>
                                             </Column>
                                         </columns>
                                         <items>
@@ -382,16 +384,16 @@
                                                     <ObjectNumber
                                                        unit="{level}"
                                                     />
-                                                    <ObjectNumber
-                                                        number="{description}"   
-                                                    />      
+                                                    <ObjectNumber number="{mtutarı}"/>
+                                                    <Label text="{description}" wrapping="true"/>          
                                                 </cells>
                                             </ColumnListItem>
                                         </items>
                                     </Table>
                                 </VBox>
                         </Page> 
-                        
+                        <Page id="jsiletable" class="sapUiResponsiveContentPadding" showHeader="false" enableScrolling="false">
+                        </Page>
                     </NavContainer>   
                 </l:flexContent>
             </l:FixFlex>

@@ -1,19 +1,16 @@
 sap.ui.define([  
     "sap/ui/core/mvc/Controller",
-    "sap/ui/core/routing/HashChanger",
-  ], function(Controller,HashChanger) {  
+    "fragments/controller/openDialog"
+  ], function(Controller,FragmentController) {  
     "use strict"; 
-    var base; 
-    var oController;
+    var base;
 	return Controller.extend("BNetSapUI5.fragments.controller.openDialog", {
-        beforeOpen:function(){
-            base = this;
-            base.thisController=sap.ui.controller("BNetSapUI5/fragments/controller/openDialog")
-            LoginControl.login(base).then(function (res) {
-				if (res) {
-				}
-            });
-            base.oController.onInit()       
+        onInit: function() {
+            //Create new fragment with own controller
+            var oFragmentController = new FragmentController();
+            var oFragment = sap.ui.xmlfragment("BNetSapUI5.fragments.controller.openDialog", oFragmentController);
+            this.getView().byId("opendialogfragment").addContent(oFragment);
+            
         },
     });
 });
