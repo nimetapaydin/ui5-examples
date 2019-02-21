@@ -16,30 +16,9 @@
             <OverflowToolbar>
                 <ToolbarSpacer/>
                 <Button
-                        icon="sap-icon://add" 
-                        tooltip="Add New Ticket" 
-                        type="Transparent"
-                        press="openDialogAdd"/>
-                <Button
-                    icon="sap-icon://filter"
-                    tooltip="Filtering"
+                    icon="sap-icon://decline" 
                     type="Transparent"
-                    press="onFilterToDoList"/>
-                <Button
-                    icon="sap-icon://group-2"
-                    tooltip="Grouping"
-                    type="Transparent"
-                    press="onGroupToDoList"/>
-                <Button
-                    icon="sap-icon://refresh"
-                    tooltip="Refresh"
-                    type="Transparent"
-                    press="getToDoList"/>
-                <OverflowToolbarToggleButton
-                    icon="sap-icon://search"
-                    tooltip="Search Ticket"
-                    type="Transparent"
-                    press="onToggleToDoSearchInputVisibility"/>
+                    press="closeDialogFragment"/>
             </OverflowToolbar>
             <Panel width="auto" class="sapUiResponsiveMargin" accessibleRole="Region">
                 <headerToolbar>
