@@ -100,6 +100,23 @@ sap.ui.define([
 				}
 			]
 		 
+			
+			listData.map(function(item){                    
+				switch (item.level) {
+					case "Warning":
+						item.levelColor = "#e98f2f";
+						break;
+					case "Success":
+						item.levelColor = "#31bf81";                         
+						break;
+					case "Error":
+						item.levelColor = "#ec4140";                          
+						break;                       
+					default:
+						break;
+				}
+			});
+			
 			oModel = new sap.ui.model.json.JSONModel();
 			sap.ui.getCore().setModel(oModel);
 			this.getView().byId("userList").setModel(oModel);
@@ -223,7 +240,20 @@ sap.ui.define([
 			template : mytemplate  
 		});  
 		oTable.placeAt("content")
-	    }
+		},
+		
+		closeDialogFragment:function(oEvent){
+			_this.openDialog.close();
+		},
+		deletePersonalInformation:function(oEvent){
+			var oSelectedItem = oEvent.getSource().getParent();
+			var oPath = oSelectedItem.getBindingContext().sPath;
+			var idx = parseInt(oPath.substring(oPath.lastIndexOf('/') +1));
+
+			var modelData = oModel.oData.UserListModel;
+			modelData.splice(idx, 1);
+			oModel.refresh(true);
+		}
 
 	});
 });

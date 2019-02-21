@@ -265,7 +265,10 @@
                             </VBox>
                         </l:Grid>
                     </content>
-                </Panel>
+            </Panel>
+            <buttons>
+                <Button text="Kaydet" type="Transparent" press="onTriggerGlobalAppSearchDialogEvent"/>
+            </buttons>
 
            
     </Dialog>

@@ -275,36 +275,35 @@
                                 vertical="true"
                                 focusable="false"
                                 class="sapUiNoContentPadding sapUiNoMargin sapUiSmallMarginTopBottom">
-                                <l:Grid position="Left" defaultSpan="XL12 L12 M12 S12" width="100%">
-                                    <List id="userList" items="{/UserListModel}">
-                                        <items>
-                                            <CustomListItem class="sociallistbackground" type="Active">
-                                                <HBox alignItems="Center" width="100%">
-                                                    <f:Avatar src="{avatar}" displaySize="XS" class="sapUiTinyMarginBeginEnd"/>
-                                                    <VBox
-                                                        alignItems="Stretch"
-                                                        justifyContent="Center"
-                                                        width="100%"
-                                                        class="sapUiTinyMarginEnd">
-                                                        <Text text="{name}" class="user-"/>
-                                                        <Text text="{description}" class="message-body" maxLines="2"/>
-                                                        <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween">
-                                                            <HBox alignItems="Center" justifyContent="Start">
-                                                                <HBox alignItems="Center" justifyContent="Start">
-                                                                    <core:Icon src="sap-icon://circle-task-2" size="8px" color="{statusColor}"/>
-                                                                    <Text text="{statusText}" class="sapUiTinyMarginBegin message-body"/>
-                                                                </HBox>
-                                                                <HBox alignItems="Center" justifyContent="Start" class="sapUiTinyMarginBegin">
-                                                                    <core:Icon src="sap-icon://flag" size="8px" color="{prioColor}"/>
-                                                                    <Text text="{prioText}" class="sapUiTinyMarginBegin message-body"/>
-                                                                </HBox>
-                                                            </HBox>
-                                                            <Text text="{lastChangeTime}" class="time"/>
+                                <l:Grid position="Left" defaultSpan="XL12 L12 M12 S12" width="100%">                                 
+                                     <List
+                                        id="userList"
+                                        headerText="Kullanıcılar"
+                                        items="{/UserListModel}">
+                                        
+                                        <CustomListItem class="listItemStyle" type="Navigation">
+                                            <HBox alignItems="Center" justifyContent="Stretch">
+                                                <VBox alignItems="Stretch" justifyContent="Stretch">
+                                                    <f:Avatar id="avatar" src="{avatar}" displaySize="XS"/>
+                                                </VBox>
+                                                <HBox width="100%" alignItems="Center" justifyContent="Stretch">
+                                                    <VBox width="100%" class="sapUiSmallMarginBegin" justifyContent="Center" alignItems="Start">
+                                                        <Label text="{description}" wrapping="true" />
+                                                        <HBox alignItems="Center" justifyContent="Start">
+                                                            <core:Icon src="sap-icon://circle-task-2" color="{levelColor}" size="14px"/>
+                                                            <Label text="{level}" class="sapUiTinyMarginBegin"/>
                                                         </HBox>
                                                     </VBox>
+                                                  
+
+                                                    <Button
+                                                    icon="sap-icon://sys-cancel"
+                                                    press="deletePersonalInformation"
+                                                    type="Transparent"
+                                                    />    
                                                 </HBox>
-                                            </CustomListItem>
-                                            </items>
+                                            </HBox>
+                                        </CustomListItem>
                                     </List>
                                 </l:Grid>
                             </ScrollContainer>
