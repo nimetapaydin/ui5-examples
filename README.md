@@ -1,6 +1,10 @@
 # ui5-examples
-kodu
-browser-sync start -server --files '**/*' --no-notify --host localhost --port 8101
+UI5 projesini çalıştırabilmeniz için node modul kütüphanesi olan browser-sync'i ilk olarak şu şekilde kurmanız gerekmektedir.
+     npm install -g browser-sync
+kurulum işlemi tamamlandıktan sonra projeyi git yada terminalden aşağıdaki komutu;
+
+   browser-sync start -server --files '**/*' --no-notify --host localhost --port 8101
+
 kullanarak çalıştırabilirsiniz. 
 
 Kısaca UI5 ve UI5 Element
