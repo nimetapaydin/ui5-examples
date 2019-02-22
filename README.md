@@ -23,8 +23,7 @@ Kullanımı width ="100%" ve width="100px" vb şekillerde olabilir.
 AlignItems ve justifyContent kullanılırken yardımcı elemanlar ise Start,End,Center ve Stretch ‘dir.
 
 Örnek kullanımlar ;
-
-
+```
  <HBox width="100%" alignItems="Center" justifyContent="Stretch" class="personalInfo">
     <Label text="İş E-posta(*)" width="130px"/>
  </HBox>
@@ -33,6 +32,8 @@ AlignItems ve justifyContent kullanılırken yardımcı elemanlar ise Start,End,
  <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginEnd">
     <Input  placeholder="user@example.com" />
  </VBox>
+
+```
 
 şeklinde örnek verilebilir.
 Burada farklı olarak HBox ve VBox'ın class  alabildiğini de görebiliyoruz. İlk örnekteki
