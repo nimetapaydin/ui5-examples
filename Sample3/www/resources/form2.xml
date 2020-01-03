@@ -1,0 +1,68 @@
+<mvc:View height="100%" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <App id="app">
+        <Page title="Grup Oluştur" class="sapUiContentPadding">
+            <content>
+                <HBox width="100%" allignItems="Start" JustifyContent="Stretch">
+
+                    <VBox
+                        class="sapUiTinyMarginEnd"
+                        width="80%"
+                        alignItems="Start"
+                        JustifyContent="Stretch">
+                        <VBox width="100%" alignItems="Stretch" JustifyContent="Stretch">
+                            <Label width="100%" text="Grup Tipi" LabelFor="gruptipi"/>
+                            <Select width="100%"></Select>
+                        </VBox>
+                        <VBox width="100%" alignItems="Stretch" JustifyContent="Stretch">
+                            <Label width="100%" text="Grup İsmi" LabelFor="grupismi"/>
+                            <Select width="100%"></Select>
+                        </VBox>
+                        <VBox width="100%" alignItems="Stretch" JustifyContent="Stretch">
+                            <Label width="100%" text="XMPP Group Type" LabelFor="xmppgrouptype"/>
+                            <Select width="100%"/>
+                        </VBox>
+                        <VBox width="100%" alignItems="Stretch" JustifyContent="Stretch">
+                            <Label
+                                width="100%"
+                                text="XMPP Push Notification Type"
+                                LabelFor="xmpppushnotification"/>
+                            <Select width="100%"/>
+                        </VBox>
+                        <VBox width="100%" alignItems="Start">
+                            <Button text="Üyeleri Seç"/>
+                        </VBox>
+                    </VBox>
+
+                    <VBox
+                        class="sapUiTinyMarginBegin"
+                        width="20%"
+                        alignItems="End"
+                        JustifyContent="Stretch">
+                        <VBox width="100%" alignItems="Stretch" JustifyContent="Stretch">
+                            <Image src="resources/moonpie.jpg" width="100%"/>
+                        </VBox>
+                        <VBox width="100%" alignItems="Center" JustifyContent="Center">
+                            <Button text="Resim Seç"/>
+                        </VBox>
+                    </VBox>
+
+                </HBox>
+                <VBox width="100%" alignItems="End" JustifyContent="End">
+                    <VBox width="100%" alignItems="End" JustifyContent="End">
+                        <Button text="Kaydet"/>
+                    </VBox>
+                </VBox>
+            </content>
+            <footer>
+                <Toolbar>
+                    <HBox width="100%" alignItems="Start" justifyContent="Start">
+                        <Button text="Delete" type="Emphasized"/>
+                        <Button text="Delete" type="Emphasized"/>
+                    </HBox>
+                    <ToolbarSpacer/>
+                    <Button text="Kaydet" type="Emphasized"/>
+                </Toolbar>
+            </footer>
+        </Page>
+    </App>
+</mvc:View>
