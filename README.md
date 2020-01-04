@@ -69,3 +69,18 @@ Açıklamak gerekirse örnekteki "sapUiTinyMarginEnd" yazıldığı yerin "sonun
 Diğer öğeler temel tasarım
 öğelerinden olup Label,İnput,Select,Button ve CheckBox gibi örnekler verilebilir.
 
+
+## Örnekler ;
+
+Sample1: 
+![Sample1](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/sample1.png)
+
+Sample2: 
+![Sample2](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/sample2.png)
+
+Sample3: 
+![Sample3](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/sample3.png)
+
+Sample4: 
+![Sample4](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/sample4.png)
+
