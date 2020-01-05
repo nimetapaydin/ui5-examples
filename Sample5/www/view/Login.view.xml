@@ -1,0 +1,260 @@
+<mvc:View
+    height="100%"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    class="sapUiSizeCompact">
+    <App id="app">
+        <Page title="Panel">
+
+            <Panel width="auto" class="sapUiResponsiveMargin" accessibleRole="Region">
+                <headerToolbar>
+                    <Toolbar height="3rem">
+                        <Title text="Yönetim Bilgileri"/>
+                    </Toolbar>
+                </headerToolbar>
+                <content>
+                    <l:Grid hSpacing="1" vSpacing="0" defaultSpan="L6 M12 S12">
+                        <VBox alignItems="Stretch" justifyContent="Stretch">
+                            <VBox width="100%" alignItems="Center" justifyContent="Center">
+                                <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                    <Label text="Dersi Veren" width="130px" LabelFor="Dersiveren" required="true"/>
+                                    <Label width="10px" text=" : "/>
+                                    <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                        <Input placeholder="Personel Ara"/>
+                                    </VBox>
+                                </HBox>
+                            </VBox>
+                            <VBox width="100%" alignItems="Start" justifyContent="Stretch">
+                                <HBox width="100%" alignItems="Center" justifyContent="Stretch">
+                                    <Label text="Yönetici" width="130px" LabelFor="yönetici"/>
+                                    <Label width="10px" text=" : "/>
+                                    <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                        <Input placeholder="Personel Ara"/>
+                                    </VBox>
+                                </HBox>
+                            </VBox>
+                        </VBox>
+                        <VBox alignItems="Start" justifyContent="Stretch">
+                            <HBox width="100%" alignItems="Center" justifyContent="Center">
+                                <Label text="Ders Yöneticisi" width="130px" LabelFor="Dersyöneticisi"/>
+                                <Label width="10px" text=" : "/>
+                                <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                    <Input placeholder="Personel Ara"/>
+                                </VBox>
+                            </HBox>
+                        </VBox>
+                    </l:Grid>
+                </content>
+            </Panel>
+
+            <Panel width="auto" class="sapUiResponsiveMargin">
+                <headerToolbar>
+                    <Toolbar height="3rem">
+                        <Title text="Ders Bilgileri"/>
+                        <ToolbarSpacer/>
+                    </Toolbar>
+                </headerToolbar>
+                <content>
+                    <l:Grid hSpacing="1" vSpacing="0" defaultSpan="L6 M12 S12">
+                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                            <VBox alignItems="Center" justifyContent="Center">
+                                <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                    <Label text="Ders" width="130px" LabelFor="Ders"/>
+                                    <Label width="10px" text=" : "/>
+                                    <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                        <Input placeholder="Detayları Seçiniz..."/>
+                                    </VBox>
+                                </HBox>
+                                <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                    <Label text="Ders Uzun Tanımı" width="130px" LabelFor="Dersuzuntanımı"/>
+                                    <Label width="10px" text=" : "/>
+                                    <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                        <Input/>
+                                    </VBox>
+                                </HBox>
+                                <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                    <Label text="Ders Kısa Tanımı" width="130px" LabelFor="Derskısatanımı"/>
+                                    <Label width="10px" text=" : "/>
+                                    <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                        <Input/>
+                                    </VBox>
+                                </HBox>
+                            </VBox>
+
+                            <l:Grid hSpacing="0" vSpacing="0" defaultSpan="L6 M12 S12">
+                                
+                                    <VBox alignItems="Center" justifyContent="Start">
+                                        <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                            <Label text="Kapsam" width="130px" LabelFor="kapsam"/>
+                                            <Label width="10px" text=" : "/>
+                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                <Select width="100%">
+                                                    <items>
+                                                        <core:Item text="General"/>
+                                                    </items>
+                                                </Select>
+                                            </VBox>
+                                        </HBox>
+                                        <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                            <Label text="Başlangıç Tarihi" width="130px" LabelFor="baslangictarihi"/>
+                                            <Label width="10px" text=" : "/>
+                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                <DatePicker dateValue="{/date}"/>
+                                            </VBox>
+                                        </HBox>
+                                        <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                            <Label text="Ders Tipi" width="130px" LabelFor="Derstipi"/>
+                                            <Label width="10px" text=" : "/>
+                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                <Select width="100%">
+                                                    <items>
+                                                        <core:Item text="Not"/>
+                                                        <core:Item text="Item2"/>
+                                                    </items>
+                                                </Select>
+                                            </VBox>
+                                        </HBox>
+                                        <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                            <Label text="Ders Durumu" width="130px" LabelFor="Dersdurumu"/>
+                                            <Label width="10px" text=" : "/>
+                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                <Select width="100%">
+                                                    <items>
+                                                        <core:Item text="New"/>
+                                                    </items>
+                                                </Select>
+                                            </VBox>
+                                        </HBox>
+                                        <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                            <Label text="Ders Türü" width="130px" LabelFor="derstürü"/>
+                                            <Label width="10px" text=" : "/>
+                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                <Select width="100%">
+                                                    <items>
+                                                        <core:Item text="Company"/>
+                                                    </items>
+                                                </Select>
+                                            </VBox>
+                                        </HBox>
+                                    </VBox>
+
+                                    <VBox  alignItems="Center" justifyContent="Start">
+                                        <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                            <Label text="Ders Grup Tipi" width="130px" LabelFor="Dersgruptipi"/>
+                                            <Label width="10px" text=" : "/>
+                                            <VBox width="100%" alignItems="Stretch" justifyContent="Start">
+                                                <Select width="100%">
+                                                    <items>
+                                                        <core:Item text="Internal"/>
+                                                    </items>
+                                                </Select>
+                                            </VBox>
+                                        </HBox>
+                                        <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                            <Label text="Bitiş Tarihi" width="130px" LabelFor="bitistarihi"/>
+                                            <Label width="10px" text=" : "/>
+                                            <VBox width="100%" alignItems="Stretch" justifyContent="Start">
+                                                <DatePicker dateValue="{/date}"/>
+                                            </VBox>
+                                        </HBox>
+                                        <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                            <Label text="Gün Sayımı" width="130px" LabelFor="günsayimi"/>
+                                            <Label width="10px" text=" : "/>
+                                            <VBox width="100%" alignItems="Stretch" justifyContent="Start">
+                                                <StepInput/>
+                                            </VBox>
+                                        </HBox>
+                                        <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                            <Label text="Aktiflik" width="130px" LabelFor="aktiflik"/>
+                                            <Label width="10px" text=" : "/>
+                                            <VBox width="100%" alignItems="Stretch" justifyContent="Start">
+                                                <Select width="100%">
+                                                    <items>
+                                                        <core:Item text="Aktif"/>
+                                                    </items>
+                                                </Select>
+                                            </VBox>
+                                        </HBox>
+                                        <HBox width="100%" alignItems="Center" justifyContent="Stretch">
+                                            <Label text="Sınıf Tipi" width="130px" LabelFor="sınıftiipi"/>
+                                            <Label width="10px" text=" : "/>
+                                            <VBox alignItems="Stretch" justifyContent="Start" width="100%">
+                                                <Select width="100%">
+                                                    <items>
+                                                        <core:Item text="Sınıf"/>
+                                                    </items>
+                                                </Select>
+                                            </VBox>
+                                        </HBox>
+                                    </VBox>
+                                   
+                                </l:Grid>
+                            </VBox>
+
+                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                    <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                        <Label text="Ders Grubu" width="130px" LabelFor="Dersgrubu"/>
+                                        <Label width="10px" text=" : "/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                            <Select width="100%"/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                        <Label text="Ders Alt Grubu" width="130px" LabelFor="Dersaltgrubu"/>
+                                        <Label width="10px" text=" : "/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                            <Select width="100%">
+                                                <items>
+                                                    <core:Item text="General"/>
+                                                </items>
+                                            </Select>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                        <Label text="Öğrenci" width="130px" LabelFor="ogrenci"/>
+                                        <Label width="10px" text=" : "/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                            <Input placeholder="Öğrenci Adı"/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                        <Label text="Yetkilendirme" width="130px" LabelFor="yetkilendirme"/>
+                                        <Label width="10px" text=" : "/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                            <Select width="100%">
+                                                <items>
+                                                    <core:Item text="Level"/>
+                                                </items>
+                                            </Select>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                        <Label text="Kodu" width="130px" LabelFor="kodu"/>
+                                        <Label width="10px" text=" : "/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                            <Input placeholder="Kodu..."/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox width="100%" alignItems="Center" justifyContent="Start">
+                                        <Label width="135px"/>                                    
+                                        <FlexBox direction="Row" wrap="Wrap" width="100%" alignItems="Stretch" justifyContent="Start">
+                                            <CheckBox  text="A1"/>
+                                            <CheckBox  text="A2"/>
+                                            <CheckBox  text="B1"/>                                
+                                            <CheckBox  text="B2"/>
+                                            <CheckBox  text="C1"/>
+                                            <CheckBox  text="C2"/>
+                                        </FlexBox>
+                                    </HBox>
+                                </VBox>
+                            </VBox>
+                        </l:Grid>
+                    </content>
+                </Panel>
+
+            </Page>
+        </App>
+    </mvc:View>
