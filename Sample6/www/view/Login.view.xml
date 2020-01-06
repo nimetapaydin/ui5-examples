@@ -1,0 +1,284 @@
+<mvc:View
+    height="100%"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core"
+    class="sapUiSizeCompact"
+    controllerName="HelloWorld.controller.Login">
+    <App id="app">
+        <Page title="Hoca Ekleme" class="background2">
+            <customHeader >
+                <Bar>
+                    <contentLeft>
+                        <Button
+                            text="Yenile"
+                            type="Transparent"
+                            icon="sap-icon://refresh"
+                            class="sapUiNoMargin"/>
+                        <Button
+                            text="Seçenekler"
+                            type="Transparent"
+                            icon="sap-icon://action-settings"
+                            class="sapUiNoMargin"/>
+                    </contentLeft>
+                    <contentMiddle>
+                        <HBox alignItems="Center" justifyContent="Stretch" class="sapUiNoMargin">
+                            <Text text="Ödev:| Yeni Ödev Oluşturma" class="sapUiSmallMarginBegin"/>
+                        </HBox>
+                    </contentMiddle>
+                    <contentRight>
+                        <HBox alignItems="Center" justifyContent="Start">
+                            <f:Avatar src="resources/moonpie.jpg" displaySize="XS"/>
+                            <Label text="Nimet APAYDIN" class="sapUiTinyMarginBegin"/>
+                        </HBox>
+                    </contentRight>
+                </Bar>
+            </customHeader>
+
+            <IconTabBar
+                height="100%"
+                id="idIconTabBarStretchContent"
+                backgroundDesign="Transparent"
+                applyContentPadding="false"
+                expanded="{device>/isNoPhone}"
+                stretchContentHeight="true"
+                class="sapUiResponsiveContentPadding">
+                <items>
+                    <IconTabFilter text="İş Tanımı">
+                        <l:FixFlex class="fixFlexVertical " fixFirst="false">
+                            <l:fixContent>
+                                <HBox width="100%" alignItems="End" justifyContent="End">
+                                    <Button
+                                        type="Emphasized"
+                                        text="Editör"
+                                        icon="sap-icon://request"
+                                        class="sapUiTinyMarginEnd"/>
+                                    <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                        <Input placeholder="Yorum Yazınız"/>
+                                    </VBox>
+                                    <Button
+                                        type="Emphasized"
+                                        text="Gönder"
+                                        icon="sap-icon://paper-plane"
+                                        class="sapUiTinyMarginBegin"/>
+                                </HBox>
+                            </l:fixContent>
+                            <l:flexContent>
+                                <ScrollContainer
+                                    height="100%"
+                                    width="100%"
+                                    horizontal="false"
+                                    vertical="true"
+                                    focusable="true">
+
+                                    <VBox alignItems="Stretch" justifyContent="Start" width="100%" heigth="100%">
+                                        <HBox width="100%" alignItems="Start" justifyContent="Stretch">
+                                            <HBox alignItems="Start" justifyContent="Stretch" width="80%">
+                                                <HBox
+                                                    id="todoInputPanel"
+                                                    width="100%"
+                                                    alignItems="Start"
+                                                    justifyContent="Stretch">
+                                                    <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                        <HBox alignItems="Center" justifyContent="Start" class="sapUiTinyMarginTop">
+                                                            <Label text="Proje" width="55px" LabelFor="proje"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Input
+                                                                    placeholder="Proje Ara"
+                                                                    editable="true"
+                                                                    showValueHelp="true"
+                                                                    valueHelpOnly="true"
+                                                                    valueHelpRequest="handleValueHelp"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Start" class="sapUiTinyMarginTop">
+                                                            <Label text="Kimden" width="55px" LabelFor="kimden"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Input
+                                                                    placeholder="kimden"
+                                                                    editable="true"
+                                                                    showValueHelp="true"
+                                                                    valueHelpOnly="true"
+                                                                    valueHelpRequest="handleValueHelp"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Start" class="sapUiTinyMarginTop">
+                                                            <Label text="Kime" width="55px" LabelFor="kime"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Input
+                                                                    placeholder="Hoca Ara"
+                                                                    editable="true"
+                                                                    showValueHelp="true"
+                                                                    valueHelpOnly="true"
+                                                                    valueHelpRequest="handleValueHelp"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Start" class="sapUiTinyMarginTop">
+                                                            <Label text="Bilgi" width="55px" LabelFor="bilgi"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Input
+                                                                    placeholder="Hoca Ara"
+                                                                    editable="true"
+                                                                    showValueHelp="true"
+                                                                    valueHelpOnly="true"
+                                                                    valueHelpRequest="handleValueHelp"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Start" class="sapUiTinyMarginTop">
+                                                            <Label text="Konu" width="55px" LabelFor="konu"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Input/>
+                                                            </VBox>
+                                                        </HBox>
+                                                    </VBox>
+                                                    <VBox
+                                                        width="100%"
+                                                        alignItems="Stretch"
+                                                        justifyContent="Stretch"
+                                                        class="sapUiTinyMarginBegin">
+                                                        <HBox alignItems="Center" justifyContent="Stretch" class="sapUiTinyMarginTop">
+                                                            <Label text="duzeltme Talebi" width="100px" LabelFor="duzeltmetalebi"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Select width="100%"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Stretch" class="sapUiTinyMarginTop">
+                                                            <Label text="Durum" width="100px" LabelFor="durum"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Select width="100%"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Stretch" class="sapUiTinyMarginTop">
+                                                            <Label text="Öncelik" width="100px" LabelFor="öncelik"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Select width="100%"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Stretch">
+                                                            <Label text="Başlangıç Tarihi" width="100px" LabelFor="baslangictarihi"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <DatePicker dateValue="{/date}"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Stretch">
+                                                            <Label text="Bitiş Tarihi" width="100px" LabelFor="bitistarihi"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <DatePicker dateValue="{/date}"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                    </VBox>
+                                                </HBox>
+                                            </HBox>
+                                            <VBox width="20%" alignItems="End" justifyContent="Stretch">
+                                                <Button text="Gizle" press="showHideInputPanel"/>
+                                            </VBox>
+                                        </HBox>
+                                        <HBox
+                                            width="100%"
+                                            alignItems="Center"
+                                            justifyContent="SpaceBetween"
+                                            class="background">
+                                            <Label text="Yorumlar"/>
+                                            <HBox alignItems="Center" justifyContent="End">
+                                                <Button
+                                                    text="Yenile"
+                                                    class="sapUiNoMargin background "
+                                                    type="Transparent"
+                                                    icon="sap-icon://refresh"/>
+                                                <MenuButton text="Sırala" type="Transparent" class="background">
+                                                    <menu>
+                                                        <Menu itemSelected="onMenuAction">
+                                                            <items>
+                                                                <MenuItem text="Edit" icon="sap-icon://edit"/>
+                                                                <MenuItem text="Save" icon="sap-icon://save"/>
+                                                                <MenuItem text="Open" icon="sap-icon://open-folder"/>
+                                                            </items>
+                                                        </Menu>
+                                                    </menu>
+                                                </MenuButton>
+                                                <MenuButton text="Grupla" type="Transparent" class="background">
+                                                    <menu>
+                                                        <Menu itemSelected="onMenuAction">
+                                                            <items>
+                                                                <MenuItem text="Edit" icon="sap-icon://edit"/>
+                                                                <MenuItem text="Save" icon="sap-icon://save"/>
+                                                                <MenuItem text="Open" icon="sap-icon://open-folder"/>
+                                                            </items>
+                                                        </Menu>
+                                                    </menu>
+                                                </MenuButton>
+                                                <MenuButton text="Filtrele" type="Transparent" class="background">
+                                                    <menu>
+                                                        <Menu itemSelected="onMenuAction">
+                                                            <items>
+                                                                <MenuItem text="Edit" icon="sap-icon://edit"/>
+                                                                <MenuItem text="Save" icon="sap-icon://save"/>
+                                                                <MenuItem text="Open" icon="sap-icon://open-folder"/>
+                                                            </items>
+                                                        </Menu>
+                                                    </menu>
+                                                </MenuButton>
+
+                                            </HBox>
+                                        </HBox>
+                                        <MessageStrip
+                                            text="Herhangi bir yorum bulunmamaktatır"
+                                            type="Warning"
+                                            showIcon="true"
+                                            showCloseButton="true"
+                                            class="sapUiTinyMarginBottom"></MessageStrip>
+                                    </VBox>
+                                </ScrollContainer>
+                            </l:flexContent>
+                        </l:FixFlex>
+                    </IconTabFilter>
+                    <IconTabFilter text="Dosyalar">
+                        <Text text="Coming Soon ..."/>
+                    </IconTabFilter>
+                    <IconTabFilter text="Detaylar">
+                        <Text text="Coming Soon ..."/>
+                    </IconTabFilter>
+                    <IconTabFilter text="Aktivite">
+                        <Text text="Coming Soon ..."/>
+                    </IconTabFilter>
+                    <IconTabFilter text="Roller">
+                        <Text text="Coming Soon ..."/>
+                    </IconTabFilter>
+                    <IconTabFilter text="Ödev Geçmişi">
+                        <Text text="Coming Soon ..."/>
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+            <footer>
+                <Toolbar>
+                    <HBox width="100%" alignItems="Start" justifyContent="Start">
+                        <Button
+                            text="Ödev Bilgileri"
+                            type="transparent"
+                            icon="sap-icon://hint"
+                            press="openodevInfoPopover"
+                            id="pb"/>
+                    </HBox>
+                    <HBox alignItems="End" justifyContent="End" class="sapUiTinyMarginEnd">
+                        <Button text="Ödevi Sil" type="buttoncolor" class="buttoncolor"/>
+                    </HBox>
+                    <HBox alignItems="End" justifyContent="End" class="buttoncolor2">
+                        <Button text="Kaydet" type="Emphasized"/>
+                    </HBox>
+                </Toolbar>
+            </footer>
+        </Page>
+    </App>
+</mvc:View>
