@@ -1,0 +1,41 @@
+<mvc:View
+    height="100%"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core"
+    class="sapUiSizeCompact"
+    controllerName="HelloWorld.controller.Login">
+    <App id="app">
+        <Page class="background2" showHeader="false">
+
+            <VBox width="1500px" height="800px" justifyContent="Center" alignItems="Center">
+                <VBox
+                    width="100%"
+                    class="sapUiSmallMarginBegin"
+                    justifyContent="Center"
+                    alignItems="Center">
+                    <VBox width="500px" height="200px" alignItems="Center" JustifyContent="Stretch">
+                        <Image src="resources/letsvote.png" width="100%"/>
+                    </VBox>
+                    <Label text="Best way for rating" class="votebackground"/>
+                  
+                    <HBox alignItems="Center" justifyContent="Center">
+                        <core:Icon
+                            src="sap-icon://favorite"
+                            size="30px"
+                            class="sapUiTinyMarginBottom "/>                       
+                    </HBox>
+                </VBox>
+                <VBox class="sapUiSmallMarginBegin">
+                    <Button
+                        text="START"
+                        type="Transparent"
+                        class="votebackground"
+                        press="showVoteOpenDialog"/>                                          
+                </VBox>
+            </VBox>
+        </Page>
+    </App>
+</mvc:View>

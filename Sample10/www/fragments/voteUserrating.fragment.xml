@@ -1,0 +1,53 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        showHeader="false"
+        modal="true"
+        contentWidth="500px"
+        contentHeight="750px"
+        stretchOnPhone="true"
+        showCloseButton="true"
+        horizontalScrolling="false"
+        verticalScrolling="true">
+        <List id="voteUserList" items="{/VotedUserList}">
+            <items>
+                <CustomListItem id="voteListUserItem" class="voteListItem">
+                    <VBox width="100%" alignItems="Center" justifyContent="Stretch">
+                        <VBox alignItems="Center" justifyContent="Center" class="levelColorIcon">
+                            <f:Avatar src="{avatar}" displaySize="M"/>
+                        </VBox>
+                        <VBox width="100%" alignItems="Center" justifyContent="Center">
+                            <VBox
+                                width="100%"
+                                class="sapUiSmallMarginTop"
+                                justifyContent="Center"
+                                alignItems="Center">
+                                <Label text="{name}" wrapping="true" class="texttransform"/>
+                                <Label textAlign="Center" text="{description}" wrapping="true"/>
+                                <HBox alignItems="Center" justifyContent="Center" class="sapUiSmallMarginTop">
+                                    <core:Icon src="sap-icon://circle-task-2" color="{levelColor}" size="14px"/>
+                                    <Label text="{level}" class="sapUiTinyMarginBegin"/>
+                                </HBox>
+                            </VBox>
+                        </VBox>
+                        <VBox width="100%" alignItems="Center" justifyContent="Center" class="rating">
+                            <RatingIndicator
+                                id="ratingIndicators"
+                                maxValue="5"
+                                value="{voteCount}"
+                                class="sapUiSmallMarginBottom"
+                                iconSize="20px"
+                                tooltip="Rating Tooltip"
+                                change="voteUser"/>
+                        </VBox>
+                    </VBox>
+                </CustomListItem>
+            </items>
+        </List>
+
+    </Dialog>
+</core:FragmentDefinition>
