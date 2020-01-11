@@ -1,0 +1,75 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core">
+    <Popover
+        contentWidth="500px"
+        contentHeight="575px"
+        class="sapUiContentPadding"
+        showHeader="false"
+        placement="Bottom"
+        verticalScrolling="false">
+
+        <ScrollContainer
+            height="100%"
+            width="100%"
+            horizontal="false"
+            vertical="true"
+            focusable="true">
+            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                <HBox alignItems="Start" justifyContent="SpaceBetween">
+                    <Button text="Friends Requests" type="Transparent" class="sapUiLargeMarginEnd"/>
+                    <HBox alignItems="End" justifyContent="End">
+                        <Button text="Settings" type="Transparent" class="sapUiLargeMarginBegin"/>
+                        <Button text="Find Friends" type="Transparent"/>
+                    </HBox>
+                </HBox>
+                <List id="userList" items="{/UserListModel}">
+
+                    <CustomListItem class="listItemStyle" type="Active">
+                        <HBox alignItems="Center" justifyContent="Stretch">
+                            <VBox alignItems="Stretch" justifyContent="Stretch">
+                                <f:Avatar id="avatar" src="{avatar}" displaySize="XS"/>
+                            </VBox>
+                            <HBox width="100%" alignItems="Center" justifyContent="Stretch">
+
+                                <VBox
+                                    width="100%"
+                                    class="sapUiSmallMarginBegin"
+                                    justifyContent="Center"
+                                    alignItems="Start">
+                                    <Label text="{name}" wrapping="true" class="texttransform"/>
+                                    <Label text="{description}" wrapping="true"/>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <core:Icon src="sap-icon://circle-task-2" color="{levelColor}" size="14px"/>
+                                        <Label text="{level}" class="sapUiTinyMarginBegin"/>
+                                    </HBox>
+                                </VBox>
+                                <Button type="Transparent" icon="sap-icon://employee-approvals"/>
+
+                                <Button
+                                    icon="sap-icon://employee-rejections"
+                                    press="deletePersonalInformation"
+                                    type="Transparent"/>
+                            </HBox>
+                        </HBox>
+
+                    </CustomListItem>
+
+                </List>
+            </VBox>
+        </ScrollContainer>
+        <footer>
+            <Toolbar class="a1" width="500px" height="70px">
+                <HBox width="100%" alignItems="Center" justifyContent="Center">
+                    <Button
+                        id="checkAllYourEvents"
+                        text="Check All Your Events"
+                        type="transparent"/>
+                </HBox>
+            </Toolbar>
+        </footer>
+    </Popover>
+</core:FragmentDefinition>
