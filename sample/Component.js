@@ -2,10 +2,10 @@ sap.ui.define(
 	["sap/ui/core/UIComponent", "sap/ui/model/json/JSONModel"],
 	function (UIComponent, JSONModel) {
 		"use strict";
-		return UIComponent.extend("BNetSapUI5.Component", {
+		return UIComponent.extend("SapUI5.Component", {
 			metadata: {
 				rootView: {
-					viewName: "BNetSapUI5.App",
+					viewName: "SapUI5.App",
 					type: "XML",
 					async: true
 				}

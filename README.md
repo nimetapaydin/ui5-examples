@@ -1,11 +1,15 @@
 # ui5-examples
-UI5 projesini çalıştırabilmeniz için node modul kütüphanesi olan browser-sync'i ilk olarak şu şekilde kurmanız gerekmektedir.
+UI5 projesini çalıştırabilmeniz için node_modules bağımlılıklarını şu şekilde kurmak gerekir.
 
-    `$ npm install -g browser-sync `
+```
+$ npm install
+```
     
 kurulum işlemi tamamlandıktan sonra projeyi git yada terminalden aşağıdaki komutu;
 
-   `$ browser-sync start -server --files '**/*' --no-notify --host localhost --port 8101 `
+```
+$ npm start
+```
 
 kullanarak çalıştırabilirsiniz. 
 

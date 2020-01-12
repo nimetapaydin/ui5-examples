@@ -1,0 +1,10 @@
+{
+    "name": "ui5-examples",
+    "version": "1.0.0",
+    "dependencies": {
+        "browser-sync": "^2.26.7"
+    },
+    "scripts": {
+        "start": "browser-sync start -server --files '**/*' --no-notify --host localhost --port 8101"
+    }
+}

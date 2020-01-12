@@ -8,7 +8,7 @@
     xmlns:f="sap.f"
     xmlns:tnt="sap.tnt"
     xmlns:unified="sap.ui.unified"
-    controllerName="BNetSapUI5.App"
+    controllerName="SapUI5.App"
     class="sapUiSizeCompact">
     <App>
         <Page id="dashboardToDoListPageID" title="Uİ5 Örnekleri" class="header-border page-color">

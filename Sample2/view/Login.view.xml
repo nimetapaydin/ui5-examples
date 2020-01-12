@@ -1,0 +1,90 @@
+<mvc:View
+	height="100%"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<App id="app">
+		<Page
+			title="Ödev Oluşturma"
+			class="sapUiContentPadding">		
+		<content>
+		<VBox  height="100%" alignItems="Stretch" justifyContent="End">
+		
+			<HBox width="100%" alignItems="Center" justifyContent="Center">
+				<Label width="100px" design="Bold"  text="Ödev" labelFor="Odev"/>
+				<Label width="10px"  text=":"/>
+				 <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+					<Input />
+			   </VBox>
+			</HBox>			
+			
+			<HBox width="100%" alignItems="Center" justifyContent="Center">
+				<Label width="100px" text="Ödev Açıklama" LabelFor="odevaciklama"/>
+				<Label width="10px"  text=":"/>
+				<VBox width= "100%" alignItems="Stretch" justifyContent="Stretch">
+					<Input/>
+				</VBox>
+			</HBox>
+
+			<HBox width="100%" alignItems="Center" justifyContent="Stretch">
+         	<HBox width="100%" alignItems="Center" justifyContent="Stretch">
+					 <Label  width="100px" text="Süre" LabelFor="sure"/>
+					 <Label width="10px"  text=":"/>
+						<VBox width= "100%" alignItems="Stretch" justifyContent="Stretch">
+							<Select width="100%" ></Select>
+						</VBox>
+					</HBox>
+					<HBox width="100%" alignItems="Center" justifyContent="Stretch" class="sapUiSmallMarginBegin">
+						<Label width="100px" text="Danışman" LabelFor="danisman"/>
+						<Label width="10px"  text=":" labelFor="ödev"/>
+						<VBox width= "100%" alignItems="Stretch" justifyContent="Stretch">
+							<Select width="100%" ></Select>
+						</VBox>
+					</HBox>
+			</HBox>
+
+			<HBox width="100%" alignItems="Center" justifyContent="Center">
+					<HBox width="100%" alignItems="Center" justifyContent="Center">
+						<Label width="100px" text="Konum" LabelFor="konum"/>
+						<Label width="10px"  text=":" labelFor="ödevyer"/>
+						<VBox width= "100%" alignItems="Stretch" justifyContent="Stretch">
+						  <Select  width="100%" ></Select>
+						</VBox>	
+					</HBox>	 
+					<HBox width="100%" alignItems="Center" justifyContent="Center" class="sapUiSmallMarginBegin">
+						<Label width="100px" text="Teknoloji" LabelFor="teknoloji"/>
+						<Label width="10px"  text=":"/>
+						<VBox width= "100%" alignItems="Stretch" justifyContent="Stretch">
+							<Select  width="100%" ></Select>
+						</VBox>
+					</HBox>
+			</HBox>
+
+			<HBox>
+				<VBox width="100%" alignItems="Start" justifyContent="End">
+				<HBox width="100%" alignItems="Start" justifyContent="Start">
+					<Label width="100px" text="Ödev İçeriği" LabelFor="odevicerigi"/>			
+					<Label width="10px"  text=":"/>
+					</HBox>
+					<VBox width= "100%" alignItems="Stretch" justifyContent="Stretch">
+						<Input/>
+					</VBox>
+				</VBox>
+			</HBox>
+  
+	   <VBox>
+	    	<VBox width="100%" alignItems="End" justifyContent="End">
+		      <Button text="Kaydet" />
+        </VBox>
+		 </VBox>	
+		</VBox>
+		</content>
+		<footer>
+			<Toolbar>
+				<HBox width="100%" alignItems="Center" justifyContent="Center">
+					<Button text="Delete" type="Emphasized" />
+				</HBox>
+			</Toolbar>		
+		</footer>
+	</Page>
+	</App>	
+</mvc:View>

@@ -9,7 +9,7 @@ sap.ui.define([
 	var ldata;
 	var currentIndex=0;
 	var controller;
-	return Controller.extend("BNetSapUI5.controller.App", {
+	return Controller.extend("SapUI5.controller.App", {
 		onInit: function () {
 			_this = this;
 		   
@@ -158,14 +158,14 @@ sap.ui.define([
 
 			
 			// if (!window.openDialog) {
-			// 	window.openDialog = sap.ui.xmlfragment("BNetSapUI5.fragments.view.openDialog", 
-		    //     sap.ui.controller("BNetSapUI5.fragments.controller.openDialog")
+			// 	window.openDialog = sap.ui.xmlfragment("SapUI5.fragments.view.openDialog", 
+		    //     sap.ui.controller("SapUI5.fragments.controller.openDialog")
 			// 	);
 			// }
 
 
 			if(!_this.openDialog){
-				_this.openDialog = sap.ui.xmlfragment("BNetSapUI5.fragments.view.openDialog", this); 
+				_this.openDialog = sap.ui.xmlfragment("SapUI5.fragments.view.openDialog", this); 
 				_this.openDialog.open();
 			}     
 			 oModel = new sap.ui.model.json.JSONModel();
