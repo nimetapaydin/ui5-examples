@@ -1,0 +1,49 @@
+.cookDialogBackground{
+    background: #4f4a88 !important;
+}
+
+.cooklistbackground{
+     background: #4f4a88 !important;
+}
+
+.cooktextNameSizeBig.sapMLabel{
+   font-size: 17px !important;
+   -webkit-text-fill-color: white!important;
+   font-weight:bold !important;
+}
+.cooktextNameSizeSmall.sapMLabel{
+    font-size: 12px !important;
+    -webkit-text-fill-color: rgb(199, 196, 196)!important;
+ }
+
+ .cooktextNameXS.sapMLabel{
+    font-size: 10px !important;
+    -webkit-text-fill-color: rgb(199, 196, 196)!important;  
+ }
+
+.cooktextsize.sapMLabel{
+    font-size: 25px !important;
+    /* -webkit-text-stroke-width: 1px !important; */
+    font-weight:bold !important;
+    -webkit-text-fill-color: white!important;
+ }
+ .cooktextNormalSize{
+    font-size: 15px !important;
+    -webkit-text-fill-color: rgb(199, 196, 196)!important;
+
+ }
+
+.cookingwebbackground{
+
+    background-image: url("purplerecepiestslice.jpg") !important;
+    background-size: 1600px 1300px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important ;
+   
+}
+.cookbutton{
+    position: absolute !important ;
+    left: 0 !important;
+    top: 50% !important;
+    margin-top: 16px;
+}
