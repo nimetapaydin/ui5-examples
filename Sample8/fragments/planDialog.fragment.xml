@@ -50,7 +50,7 @@
                         alignItems="Center"
                         justifyContent="Stretch"
                         class="sapUiTinyMarginTop">
-                        <Label text="ders" width="70px" LabelFor="ders"/>
+                        <Label text="Ders" width="70px" LabelFor="ders"/>
                         <Label width="10px" text=" : "/>
                         <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
                             <Input
@@ -175,24 +175,20 @@
                         </VBox>
                     </HBox>
                 </HBox>
-                <HBox
-                        width="100%"
-                        alignItems="Start"
-                        justifyContent="Stretch">
-                    <Label width="140px"/>
-                    <VBox width="100%" alignItems="Stretch" justifyContent="Start">
-                        <HBox width="100%" alignItems="Center" justifyContent="Stretch">
-                            <Label text="Bitiş Tarihi" width="70px"/>
+               
+                    <VBox width="100%" alignItems="Stretch" justifyContent="Start" class="sapUiTinyMarginTop">
+                        <HBox alignItems="Center" justifyContent="Stretch">
+                            <Label text="Bitiş Tarihi" width="130px"/>
                             <Label width="10px" text=" : "/>
-                            <VBox width="100%" alignItems="Stretch" justifyContent="Start">
-                                 <DatePicker id="DP6" displayFormat="long" change="dateHandleChange"  valueFormat="dd-MM-yyyy" width="100%"/>
+                            <VBox  alignItems="Stretch" justifyContent="Start" class="bitistarihimargin">
+                                 <DatePicker id="DP6" displayFormat="long" change="dateHandleChange"  valueFormat="dd-MM-yyyy" width="350px"/>
                             </VBox>
                         </HBox>
                          <HBox width="100%" alignItems="Center" justifyContent="Stretch">
                             <Text id ="T1"/>
                         </HBox> 
                     </VBox>
-                </HBox>
+               
             </VBox>
         </HBox>
 
