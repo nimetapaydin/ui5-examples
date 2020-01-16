@@ -88,3 +88,21 @@ Sample3:
 Sample4: 
 ![Sample4](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample4.png)
 
+Sample5: 
+![Sample5](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample5.png)
+
+Sample6: 
+![Sample6](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample6.png)
+
+Sample7: 
+![Sample7](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample7.png)
+
+Sample8: 
+![Sample8](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample8.png)
+
+Sample8-1: 
+![Sample8-1](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample8-1.png)
+
+Sample8-2: 
+![Sample8-2](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample8-2.png)
+
