@@ -1,0 +1,73 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        showHeader="false"
+        modal="true"
+        contentWidth="600px"
+        contentHeight="400px"
+        stretchOnPhone="true"
+        showCloseButton="false"
+        horizontalScrolling="false"
+        verticalScrolling="false"
+        class="sapUiNoContentPadding">
+
+        <List id="userDetails" items="{/UserDetailsModel}">
+            <CustomListItem class="cooklistbackground" type="Active">
+                <HBox width="100%" alignItems="Start" justifyContent="Start">
+                    <VBox width="100%" alignItems="Start" justifyContent="Start">
+                        <Image src="{cookImage}" width="100%"/>
+                        <!-- <Button icon="resources/leftarrow.png" type="Transparent"
+                        press="prevDialogOpen" class="cookbutton" /> -->
+                    </VBox>
+                    <VBox
+                        width="100%"
+                        alignItems="Stretch"
+                        justifyContent="Stretch"
+                        class="sapUiTinyMarginBegin sapUiTinyMarginBottom ">
+                        <HBox alignItems="End" justifyContent="End">
+                            <Button
+                                icon="resources/cancel.png"
+                                type="Transparent"
+                                press="ingredientDialogClose"
+                                class="sapUiLargeMarginBegin "/>
+                        </HBox>
+                        <VBox width="100%" alignItems="Center" justifyContent="Center">
+                            <Label width="100%" text="{cookName}" class="cooktextsize  "/>
+                            <Label width="100%" text="{cookingTime}" class="cooktextNormalSize"/>
+                        </VBox>
+                        <VBox
+                            width="70%"
+                            alignItems="Center"
+                            justifyContent="Center"
+                            class="sapUiLargeMarginBegin sapUiLargeMarginEnd sapUiSmallMarginTop  cooktextNormalSize">
+                            <Text width="100%" text="{ingredients}"/>
+                        </VBox>
+                        <VBox width="100%" alignItems="End" justifyContent="End">
+                            <HBox
+                                width="100%"
+                                alignItems="End"
+                                justifyContent="End"
+                                class="sapUiLargeMarginEnd">
+                                <VBox alignItems="Center" justifyContent="Center" class="sapUiSmallMarginTop">
+                                    <f:Avatar src="{chef/image}" displaySize="S"/>
+                                </VBox>
+                                <VBox alignItems="Center" justifyContent="Center">
+                                    <Label text="{chef/name}" class="sapUiTinyMarginBegin  cooktextNameXS"/>
+                                    <VBox alignItems="Center" justifyContent="Center">
+                                        <Label text="{chef/recepieCount}" class="cooktextNameXS sapUiTinyMarginBegin"/>
+                                    </VBox>
+                                </VBox>
+                            </HBox>
+                        </VBox>
+                    </VBox>
+
+                </HBox>
+
+            </CustomListItem>
+        </List>
+    </Dialog>
+</core:FragmentDefinition>
