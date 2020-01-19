@@ -1,0 +1,139 @@
+<core:FragmentDefinition
+    height="100%"
+    width="100%"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        showHeader="false"
+        modal="true"
+        stretchOnPhone="true"
+        showCloseButton="false"
+        horizontalScrolling="false"
+        verticalScrolling="false"
+        class="sapUiNoContentPadding opacityAnimation ListItems ">
+        <List id="userList" items="{/UserListModel}">
+            <CustomListItem class="sociallistbackground" type="Active">
+                <HBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                    <VBox alignItems="Start" justifyContent="Start">
+                        <HBox height="40px" alignItems="End" justifyContent="Start">
+                            <Button
+                                icon="resources/leftarrow.png"
+                                type="Transparent"
+                                press="prevDialogOpen"/>
+                        </HBox>
+                    </VBox>
+                    <VBox
+                        width="100%"
+                        alignItems="Stretch"
+                        justifyContent="Stretch"
+                        class="sapUiTinyMarginBegin sapUiTinyMarginBottom sapUiLargeMarginTop">
+                        <VBox
+                            width="100%"
+                            alignItems="Stretch"
+                            justifyContent="Stretch"
+                            class="sapUiSmallMarginBegin">
+                            <Label
+                                width="100%"
+                                text="{title}"
+                                class="sapUiSmallMarginTop socialtextboldsize"/>
+                            <HBox alignItems="SpaceBetween" justifyContent="SpaceBetween">
+                                <Label
+                                    width="100%"
+                                    text="{title2}"
+                                    class="socialtextsize sapUiLargeMarginEnd "/>
+                            </HBox>
+                        </VBox>
+                        <VBox
+                            width="90%"
+                            height="100%"
+                            alignItems="Center"
+                            justifyContent="Center"
+                            class="sapUiSmallMarginBegin cooktextNormalSize opacityAnimation">
+                            <Text width="100%" text="{description}"/>
+                            <Text width="100%" text="{description2}"/>
+                            <HBox
+                                width="100%"
+                                alignItems="End"
+                                justifyContent="SpaceBetween"
+                                class="sapUiSmallMarginTop ">
+                                <Button
+                                    id="Btn1"
+                                    icon="resources/dribbble.png"
+                                    type="Transparent"
+                                    press="navigateDialogWindow"/>
+                                <Button
+                                    id="Btn2"
+                                    icon="resources/behance.png"
+                                    type="Transparent"
+                                    press="navigateDialogWindow"/>
+                                <Button
+                                    id="Btn3"
+                                    icon="resources/linkedin.png"
+                                    type="Transparent"
+                                    press="navigateDialogWindow"/>
+                                <Button
+                                    id="Btn4"
+                                    icon="resources/twitter.png"
+                                    type="Transparent"
+                                    press="navigateDialogWindow"/>
+                                <Button
+                                    id="Btn5"
+                                    icon="resources/instagram.png"
+                                    type="Transparent"
+                                    press="navigateDialogWindow"/>
+                                <Button
+                                    id="Btn6"
+                                    icon="resources/vimeo.png"
+                                    type="Transparent"
+                                    press="navigateDialogWindow"/>
+                                <!-- <div class="social-media-button social-dribble"></div> -->
+
+                                <!-- <core:HTML content="&lt;div class=&quot;social-media-button
+                                social-dribble&quot; &gt; &lt;img src=&quot;resources/dribbble.png&quot;&gt;
+                                &lt;/div&gt;" /> <core:HTML content="&lt;div
+                                onclick=&quot;behanceOpenDialog()&quot; class=&quot;social-media-button
+                                social-behance&quot; &gt; &lt;/div&gt;" /> <core:HTML content="&lt;div
+                                class=&quot;social-media-button social-linkedin&quot; &gt; &lt;/div&gt;" />
+                                <core:HTML content="&lt;div class=&quot;social-media-button social-twitter&quot;
+                                &gt; &lt;/div&gt;" /> <core:HTML content="&lt;div
+                                class=&quot;social-media-button social-instagram&quot; &gt; &lt;/div&gt;" />
+                                <core:HTML content="&lt;div class=&quot;social-media-button social-vimeo&quot;
+                                &gt; &lt;/div&gt;" /> -->
+                            </HBox>
+                        </VBox>
+                        <VBox
+                            width="100%"
+                            alignItems="Center"
+                            justifyContent="Center"
+                            class="sapUiLargeMarginBegin sapUiLargeMarginTop">
+                            <VBox
+                                width="100%"
+                                alignItems="Center"
+                                justifyContent="Center"
+                                class="sapUiLargeMarginBegin sapUiLargeMarginTop">
+                                <Label text="{contact}" width="100%" class="sapUiLargeMarginBegin"/>
+                            </VBox>
+                        </VBox>
+                    </VBox>
+                    <VBox
+                        width="100%"
+                        alignItems="End"
+                        justifyContent="Start"
+                        class="sapUiLargeMarginTop ">
+                        <Image src="{cookImage}" width="100%"/>
+                    </VBox>
+                    <HBox height="40px" width="5px" alignItems="Start" justifyContent="End">
+                        <Button
+                            icon="resources/cancel.png"
+                            type="Transparent"
+                            press="ingredientDialogClose"
+                            class="sapUiLargeMarginBegin "/>
+                    </HBox>
+                </HBox>
+            </CustomListItem>
+        </List>
+    </Dialog>
+</core:FragmentDefinition>
