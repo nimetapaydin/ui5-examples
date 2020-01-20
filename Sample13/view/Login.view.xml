@@ -8,6 +8,6 @@
     class="sapUiSizeCompact"
     controllerName="HelloWorld.controller.Login">
     <App id="app">
-        <Page class=" socialwebbackground" showHeader="false"/>        
+        <Page class="socialwebbackground" showHeader="false"/>        
     </App>
 </mvc:View>

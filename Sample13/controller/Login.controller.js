@@ -14,15 +14,14 @@ sap.ui.define([
                     [{
                         title: "Hello",
                         title2: "WORLD.",
-                        cookImage:"resources/man.png",
+                        Image:"resources/man.png",
                         description: [" Hi everyone!",
                         "Working on social popup for my photo gallery.",
                         "It work in two step, first you click on social icon and second you have a short description and a sample of what you are going to see.",
                         "Check out the larger previews attached.",
                        "Hoping to have some returns, Thanks!",
                         ],
-                        description2:[
-                            
+                        description2:[                          
                             "The free high-resolution photo of horizon, mountain, cloud, sunrise, sunset, mist, sunlight, morning, hill", 
                             "dawn, peak, valley, mountain range, dusk, haze, ridge, plain, summit, saddle, plateau, calabasas, landform", 
                             "geographical feature, atmospheric phenomenon, mountainous landforms",
@@ -34,7 +33,7 @@ sap.ui.define([
                     [{
                         title: "My",
                         title2: "DRIBBBLE.",
-                        cookImage:"resources/dashboard.png",
+                        Image:"resources/dashboard.png",
                         description: [" Hi everyone!",
                         "Working on social popup for my photo gallery.",
                         "It work in two step, first you click on social icon and second you have a short description and a sample of what you are going to see.",
@@ -47,7 +46,7 @@ sap.ui.define([
                     [{
                         title: "My",
                         title2: "BEHANCE.",
-                        cookImage:"resources/deniz.jpg",
+                        Image:"resources/deniz.jpg",
                         description: [" Hi everyone!",
                         "Working on social popup for my photo gallery.",
                         "It work in two step, first you click on social icon and second you have a short description and a sample of what you are going to see.",
@@ -59,7 +58,7 @@ sap.ui.define([
                     [{
                         title: "My",
                         title2: "INSTAGRAM.",
-                        cookImage:"resources/happy_muffin.png",
+                        Image:"resources/happy_muffin.png",
                         description: [" Hi everyone!",
                         "Working on social popup for my photo gallery.",
                         "It work in two step, first you click on social icon and second you have a short description and a sample of what you are going to see.",
@@ -71,7 +70,7 @@ sap.ui.define([
                     [{
                         title: "My",
                         title2: "VIMEO.",
-                        cookImage:"resources/gök.jpg",
+                        Image:"resources/gök.jpg",
                         description: [" Hi everyone!",
                         "Working on social popup for my photo gallery.",
                         "It work in two step, first you click on social icon and second you have a short description and a sample of what you are going to see.",
@@ -83,7 +82,7 @@ sap.ui.define([
                     [{
                         title: "My",
                         title2: "TWITTER.",
-                        cookImage:"resources/owl.jpg",
+                        Image:"resources/owl.jpg",
                         description: [" Hi everyone!",
                         "Working on social popup for my photo gallery.",
                         "It work in two step, first you click on social icon and second you have a short description and a sample of what you are going to see.",
@@ -95,7 +94,7 @@ sap.ui.define([
                     [{
                         title: "My",
                         title2: "LINKEDIN.",
-                        cookImage:"resources/city.jpg",
+                        Image:"resources/city.jpg",
                         description: [" Hi everyone!",
                         "Working on social popup for my photo gallery.",
                         "It work in two step, first you click on social icon and second you have a short description and a sample of what you are going to see.",
@@ -107,28 +106,14 @@ sap.ui.define([
                    
         
                 ]
-                if(!_this.receipesOpenDialog){
-                    _this.receipesOpenDialog = sap.ui.xmlfragment("HelloWorld.fragments.socialDialog", this); 
-                    _this.receipesOpenDialog.open();
+                if(!_this.socialOpenDialog){
+                    _this.socialOpenDialog = sap.ui.xmlfragment("HelloWorld.fragments.socialDialog", this); 
+                    _this.socialOpenDialog.open();
                 }     
                  oModel = new sap.ui.model.json.JSONModel();
                 sap.ui.getCore().setModel(oModel);
                 // this.getView().byId("userList").setModel(oModel);
                 oModel.setProperty("/UserListModel", listData[currentIndex]);
-            },
-            nextDialogOpen:function(oEvent){
-                if(currentIndex == (listData.length-1))
-                    return;
-                oModel = new sap.ui.model.json.JSONModel();
-                sap.ui.getCore().setModel(oModel);
-                oModel.setProperty("/UserListModel", listData[++currentIndex]);
-            },
-            prevDialogOpen: function(oEvent){
-                if(currentIndex == 0)
-                    return;
-                oModel = new sap.ui.model.json.JSONModel();
-                sap.ui.getCore().setModel(oModel);
-                oModel.setProperty("/UserListModel", listData[--currentIndex]);
             },
 
             ingredientDialogOpen:function(oEvent){
