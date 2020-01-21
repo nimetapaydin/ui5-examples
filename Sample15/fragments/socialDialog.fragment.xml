@@ -1,0 +1,63 @@
+<core:FragmentDefinition
+    height="100%"
+    width="100%"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        showHeader="false"
+        modal="true"
+        stretchOnPhone="true"
+        showCloseButton="false"
+        horizontalScrolling="false"
+        verticalScrolling="false"
+        class="sapUiNoContentPadding ">
+         
+        <HBox  width="805px" alignItems="Stretch" justifyContent="Stretch" class="sociallistbackground">
+            <VBox width="400px" height="600px" alignItems="Start" justifyContent="Start">
+                <Label  width="550px" text="" />
+            </VBox>
+ 
+            <VBox
+                 width="200px"
+                alignItems="Start"
+                justifyContent="Start"
+                class="sapUiLargeMarginEnd sapUiLargeMarginTop ">   
+                
+            <VBox
+                width="470px"
+                 height="500px"
+                alignItems="Start"
+                justifyContent="Start"
+                class="sapUiLargeMarginEnd sapUiLargeMarginTop ">   
+                <VBox
+                width="400px" 
+                alignItems="Start"
+                justifyContent="Start"
+                >
+                <Label text="RECONNECT" class="socialtextNameSizeBig"/>
+                <Label text="WITH YOUR FOOD" class="socialtextboldsize"/>
+                <Label wrapping="true" text="We cook nutritionally balanced meals using whole food ingredients that are 100% USDA certified." class="cooktextNormalSize" />
+                 </VBox>
+                  <VBox width="400px"  alignItems="Start" justifyContent="Start" class="sapUiSmallMarginTop">
+                    <Label text="Name" />
+                    <Label text="Pauly Smith" class="textunderline textlinecolor"/>
+                     
+                  </VBox>
+                <VBox width="400px" alignItems="Start" justifyContent="Start">
+                    <Label text="Email" />
+                    <Label text="pauly.smith@gmail.com" class="textunderline textlinecolor sapUiSmallMarginBottom "/>
+                </VBox>
+                <Button text="SIGN IN" class="siginpbuttoncolor sapUiSmallMarginBottom"/>
+                <HBox   width="100%" alignItems="Start" justifyContent="Start">
+                <Label text="Don't have an account?" class="sapUiTinyMarginTop cooktextNameXS"/>
+                <Button text="SIGN UP"   type="Transparent" class="signupbuttoncolor" />
+                </HBox>
+                 </VBox>
+                </VBox>
+        </HBox>
+
+      </Dialog>
+</core:FragmentDefinition>
