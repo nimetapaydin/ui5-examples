@@ -73,6 +73,9 @@ Açıklamak gerekirse örnekteki "sapUiTinyMarginEnd" yazıldığı yerin "sonun
 Diğer öğeler temel tasarım
 öğelerinden olup Label,İnput,Select,Button ve CheckBox gibi örnekler verilebilir.
 
+## Bu Reponun Amacı Nedir?
+SAPUI5 ile yapılabilecek bazı tasarım örneklerini sizlerle paylaşmak.Burada bulunan örnekler detaylı projeler değil hemen hemen hepsi
+tasarım için oluşturulmuş basit anlaması kolay örneklerden oluşmakta.
 
 ## Örnekler ;
 
@@ -105,4 +108,20 @@ Sample8-1:
 
 Sample8-2: 
 ![Sample8-2](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample8-2.png)
+
+Sample9: 
+![Sample9](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample9.png)
+
+Sample10: 
+![Sample10](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample10.png)
+
+Sample10-1: 
+![Sample10-1](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample10-1.png)
+
+Sample10-2: 
+![Sample10-2](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/Sample10-2.png)
+
+
+
+
 
