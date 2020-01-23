@@ -1,0 +1,349 @@
+.b1{
+    padding: 50px;
+}
+.personalInfoContainer{
+    border-bottom: 2px solid rgb(5, 33, 70);
+    -webkit-text-fill-color: rgb(24, 9, 109) !important;
+}
+.personalInfoContainer2{
+    border-bottom: 2px solid  rgb(5, 179, 92);
+    -webkit-text-fill-color:   rgb(5, 179, 92) !important;
+}
+.personalInfoContainer3{
+    border-bottom: 2px solid  rgb(46, 106, 218) ;
+    -webkit-text-fill-color: rgb(46, 106, 218) !important;
+}
+.buttoncolor .sapMBtnInner{
+    background: #fd7d7c !important;
+    -webkit-text-fill-color: rgb(255, 255, 255) !important; 
+}
+.background{
+    background: #eff4f9 !important;
+    padding: 5px;
+}
+.background2{
+    background: #082438 !important;
+}
+.buttoncolor2 .sapMBtnInner{
+    background: #4bbd93 !important;
+    -webkit-text-fill-color: rgb(255, 255, 255) !important; 
+}
+
+ .avatarContainer{
+    position: relative !important;
+ }
+
+ .avatarContainer .levelColorIcon{
+    /* position: absolute !important; */
+    position: absolute !important;    
+    top:0 !important;
+    left: 0 !important;
+    bottom:4px !important;
+    right: 0 !important;
+    margin:auto;        
+    border-radius: 100%;
+ }
+
+ .avatarContainer .levelColorIcon.levelColorIconWarning{
+    border: 4px solid  #e98f2f !important;
+ }
+ 
+ .avatarContainer .levelColorIcon.levelColorIconError{
+    border: 4px solid  #ec4140 !important;
+ }
+
+ .avatarContainer .levelColorIcon.levelColorIconSuccess{
+    border: 4px solid  #31bf81 !important;
+ }
+
+ .listItemStyle.sapMLIB {
+     padding: 10px !important;
+ }
+ 
+.texttransform{
+    text-transform:uppercase ;
+    /* font-weight: bold; */
+    -webkit-text-stroke-width: 0.5px;
+}
+.tr:nth-child(odd)
+{ background-color:#a9cdeb}
+
+   
+.listItemStyle.sapMLIB:nth-child(even){
+    background: #f5f5f5 !important;
+    opacity: 1;
+}
+.toolbareffectcolor{
+    background: #3f4257 !important;
+    text-transform:uppercase ;
+    -webkit-text-fill-color: white!important;
+    -webkit-text-stroke-width: 0.5px;
+    
+}
+
+.cookDialogBackground{
+    background: #4f4a88 !important;
+    
+}
+
+
+.sociallistbackground{
+
+     background: #f4f4f4 !important;
+     
+}
+
+.socialtextNameSizeBig.sapMLabel{
+   font-size: 17px !important;
+   -webkit-text-fill-color:#5f6b7b !important;
+   font-weight:bold !important;
+}
+.cooktextNameSizeSmall.sapMLabel{
+    font-size: 12px !important;
+    -webkit-text-fill-color: #5f6b7b! important;
+    
+ }
+ .cooktextNameXS.sapMLabel{
+    font-size: 10px !important;
+    -webkit-text-fill-color: #5f6b7b!important;
+    
+ }
+
+.socialtextboldsize.sapMLabel{
+    font-size: 23px !important;
+    /* -webkit-text-stroke-width: 1px !important; */
+    font-weight:bold !important;
+    -webkit-text-fill-color: #5f6b7b !important;
+ }
+
+ .socialtextsize.sapMLabel{
+    font-size: 32px !important;
+    /* -webkit-text-stroke-width: 1px !important; */
+    
+    -webkit-text-fill-color: #5f6b7b !important;
+ }
+
+ .cooktextNormalSize{
+    font-size: 17px !important;
+    
+    -webkit-text-fill-color: #5f6b7b !important;
+
+ }
+
+.socialwebbackground{
+
+    background-image: url("sunset.png") !important;
+    background-size: 1600px 1300px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important ; 
+}
+.cookbutton{
+position: absolute !important ;
+left: 0 !important;
+top: 50% !important;
+margin-top: 16px;
+}
+.socialwebbackground2{
+    background: #e54c85 !important ;
+}
+
+.social-media-button{
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.social-media-button img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.opacityAnimation{
+    animation: opacityContainer 0.8s linear;
+}
+
+@keyframes opacityContainer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.ListItems.sapMLIB{
+    padding: 10px 0 !important;
+    opacity: 0;
+    transform: scale(0);
+}
+.ListItemsShow.sapMLIB{
+    opacity: 1 !important;
+    transform: scale(1);
+}
+.muffinbackground{
+background: rgba(247,158,162,1);
+background: -moz-linear-gradient(top, rgba(247,158,162,1) 0%, rgba(238,130,148,1) 50%, rgba(230,103,134,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,158,162,1)), color-stop(50%, rgba(238,130,148,1)), color-stop(100%, rgba(230,103,134,1)));
+background: -webkit-linear-gradient(top, rgba(247,158,162,1) 0%, rgba(238,130,148,1) 50%, rgba(230,103,134,1) 100%);
+background: -o-linear-gradient(top, rgba(247,158,162,1) 0%, rgba(238,130,148,1) 50%, rgba(230,103,134,1) 100%);
+background: -ms-linear-gradient(top, rgba(247,158,162,1) 0%, rgba(238,130,148,1) 50%, rgba(230,103,134,1) 100%);
+background: linear-gradient(to bottom, rgba(247,158,162,1) 0%, rgba(238,130,148,1) 50%, rgba(230,103,134,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79ea2', endColorstr='#e66786', GradientType=0 );
+}
+.bluecolor .sapMPIBarNegative{
+background: rgba(120,212,245,1) !important;
+background: -moz-linear-gradient(left, rgba(120,212,245,1) 0%, rgba(71,111,255,1) 100%) !important;
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(120,212,245,1)), color-stop(100%, rgba(71,111,255,1))) !important;
+background: -webkit-linear-gradient(left, rgba(120,212,245,1) 0%, rgba(71,111,255,1) 100%) !important;
+background: -o-linear-gradient(left, rgba(120,212,245,1) 0%, rgba(71,111,255,1) 100%) !important;
+background: -ms-linear-gradient(left, rgba(120,212,245,1) 0%, rgba(71,111,255,1) 100%) !important;
+background: linear-gradient(to right, rgba(120,212,245,1) 0%, rgba(71,111,255,1) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78d4f5', endColorstr='#476fff', GradientType=1 ) !important;
+}
+.pinkColor .sapMPIBarNegative{
+background: rgba(229,99,131,1) !important;
+background: -moz-linear-gradient(left, rgba(229,99,131,1) 0%, rgba(255,145,149,1) 100%) !important;
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(229,99,131,1)), color-stop(100%, rgba(255,145,149,1))) !important;
+background: -webkit-linear-gradient(left, rgba(229,99,131,1) 0%, rgba(255,145,149,1) 100%) !important;
+background: -o-linear-gradient(left, rgba(229,99,131,1) 0%, rgba(255,145,149,1) 100%) !important;
+background: -ms-linear-gradient(left, rgba(229,99,131,1) 0%, rgba(255,145,149,1) 100%) !important;
+background: linear-gradient(to right, rgba(229,99,131,1) 0%, rgba(255,145,149,1) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e56383', endColorstr='#ff9195', GradientType=1 ) !important;
+}
+.orange .sapMPIBarNegative{
+background: rgba(255,144,64,1) !important; 
+background: -moz-linear-gradient(left, rgba(255,144,64,1) 0%, rgba(255,199,58,1) 100%) !important;
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,144,64,1)), color-stop(100%, rgba(255,199,58,1))) !important;
+background: -webkit-linear-gradient(left, rgba(255,144,64,1) 0%, rgba(255,199,58,1) 100%) !important;
+background: -o-linear-gradient(left, rgba(255,144,64,1) 0%, rgba(255,199,58,1) 100%) !important;
+background: -ms-linear-gradient(left, rgba(255,144,64,1) 0%, rgba(255,199,58,1) 100%) !important;
+background: linear-gradient(to right, rgba(255,144,64,1) 0%, rgba(255,199,58,1) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9040', endColorstr='#ffc73a', GradientType=1 ) !important;
+}
+.greenColor .sapMPIBarNegative{
+background: rgba(44,155,210,1) !important;
+background: -moz-linear-gradient(left, rgba(44,155,210,1) 0%, rgba(32,212,164,1) 100%) !important;
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(44,155,210,1)), color-stop(100%, rgba(32,212,164,1))) !important;
+background: -webkit-linear-gradient(left, rgba(44,155,210,1) 0%, rgba(32,212,164,1) 100%) !important;
+background: -o-linear-gradient(left, rgba(44,155,210,1) 0%, rgba(32,212,164,1) 100%) !important;
+background: -ms-linear-gradient(left, rgba(44,155,210,1) 0%, rgba(32,212,164,1) 100%) !important;
+background: linear-gradient(to right, rgba(44,155,210,1) 0%, rgba(32,212,164,1) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c9bd2', endColorstr='#20d4a4', GradientType=1 ) !important;
+}
+.listıcon .sap.ui.core.Icon::after{
+    content: " ";
+    width:"2px";
+    height : "100px";
+    background: rgba(44,155,210,1) !important;
+
+}
+
+
+.left-side-view{
+    background: rgba(247,158,162,1);
+    background: -moz-linear-gradient(top, rgba(247,158,162,1) 0%, rgba(238,130,148,1) 50%, rgba(230,103,134,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,158,162,1)), color-stop(50%, rgba(238,130,148,1)), color-stop(100%, rgba(230,103,134,1)));
+    background: -webkit-linear-gradient(top, rgba(247,158,162,1) 0%, rgba(238,130,148,1) 50%, rgba(230,103,134,1) 100%);
+    background: -o-linear-gradient(top, rgba(247,158,162,1) 0%, rgba(238,130,148,1) 50%, rgba(230,103,134,1) 100%);
+    background: -ms-linear-gradient(top, rgba(247,158,162,1) 0%, rgba(238,130,148,1) 50%, rgba(230,103,134,1) 100%);
+    background: linear-gradient(to bottom, rgba(247,158,162,1) 0%, rgba(238,130,148,1) 50%, rgba(230,103,134,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79ea2', endColorstr='#e66786', GradientType=0 );
+}
+
+.right-side-view{
+    background: #fafafa !important;
+    padding: 50px;
+}
+
+.staticsDialog.sapUiPopupWithPadding .sapMDialogScrollCont.sapMDialogStretchContent{
+    height: 100% !important;
+}
+
+.left-side-listItem .sapMText, .left-side-listItem .sapUiIcon{
+    color:#fff !important;
+    opacity: 0.7;
+}
+
+.left-side-listItem{
+    border-bottom:1px dashed rgba(255,255,255,0.5);
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer !important;
+}
+
+.left-side-listItem.sapMLIB{
+    cursor: pointer !important;
+}
+
+.left-side-listItem:hover{
+    border-color:#424242;
+    cursor: pointer !important;
+}
+
+.a1{
+    background: red !important;
+}
+
+.a2{
+    background: orange !important;
+}
+
+.div-lake-okey{
+    width: 42%;
+    height: 6px;
+    border-radius: 10px;
+    background: red !important;
+}
+
+.div-howell-fort{
+    width: 78%;
+    height: 6px;
+    border-radius: 10px;
+    background: orange !important;
+}
+
+.div-east{
+    width: 62%;
+    height: 6px;
+    border-radius: 10px;
+    background: pink !important;
+}
+
+.div-ville{
+    width: 70%;
+    height: 6px;
+    border-radius: 10px;
+    background: green !important;
+}
+
+.total-price-label{
+    font-size: 27px !important;
+}
+
+.ride-side-view-padding{
+    padding-left: 40px;
+}
+
+.right-side-listStyle.sapMLIB{
+    background: transparent !important;
+    border:0 !important;
+    padding: 10px;
+    position:  relative !important;
+}
+
+.right-side-listStyle.sapMLIB:before{
+    content:"";
+    width: 1px;
+    height:100%;
+    background: #e0e0e0;
+    position: absolute;
+    left:14px;
+    top:28px;
+    bottom:0;
+}
+
+.right-side-listStyle.sapMLIB:last-child::before{
+    display: none;
+}
