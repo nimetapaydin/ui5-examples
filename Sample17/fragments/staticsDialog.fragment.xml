@@ -1,0 +1,103 @@
+<core:FragmentDefinition
+    height="100%"
+    width="100%"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        showHeader="false"
+        modal="true"
+        stretchOnPhone="true"
+        showCloseButton="false"
+        horizontalScrolling="false"
+        verticalScrolling="false"
+        contentWidth="70%"
+        contentHeight="90%"
+        class="sapUiNoPadding sapUiNoMargin sapUiNoContentPadding staticsDialog">
+        <VBox width="100%" height="100%" alignItems="Stretch" justifyContent="Stretch">
+            <VBox width="100%" height="20%" alignItems="Center" justifyContent="Start" >
+                <VBox alignItems="Center" justifyContent="Center" class="sapUiSmallMarginTop">
+                    <f:Avatar src="resources/a.jpg" class="sapUiTinyMarginEnd" displaySize="M"/>
+                    <VBox alignItems="Center" justifyContent="Center">
+                        <Text text="Nimet APAYDIN"/>
+                        <Text text="UI/UX DESIGNER"/>
+                    </VBox>
+                </VBox>
+            </VBox>
+            <HBox width="100%" height="80%" alignItems="Stretch" justifyContent="Start" class="right-side-view">
+                <VBox width="55%" alignItems="Stretch" justifyContent="Start">
+                    <VBox width="100%" alignItems="End" justifyContent="Start" class="sapUiSmallMarginBottom">
+                        <Label text="Deneyim" design="Bold"/>
+                       
+                        <Label text="Turkcell Global Bilgi – GYK Uzman Tester 2017-" wrapping="true"/>
+                    </VBox>
+                    
+                    <VBox width="100%" alignItems="End" justifyContent="Start">
+                        <Label text="ÖDÜLLER" design="Bold"/>
+                        <Label text="Cumhuriyet Üniversitesi Benimde bir fikrim var yarışması Finalist (Ekip Üyesi)" wrapping="true"/>
+                        <Label text="Turkcell Geleceği Yazan Kadınlar – İl birinciliği (Ekip Üyesi)" wrapping="true"/>
+                        <Label text="Turkcell Geleceği Yazan Kadınlar- Türkiye Yarı Finalisti (Ekip Üyesi)" wrapping="true"/>                        
+                    </VBox>
+                    <VBox width="100%" alignItems="End" justifyContent="Start">
+                        <Label text="SERTİFİKALAR" design="Bold"/>
+                        <Label text="CAMBRIDGE ESOL ENTRY LEVEL CERTIFICATE IN ESOL INTERNATIONAL (ENTRY1) : CAMBRIDGE" wrapping="true"/>
+                        <Label text="GOOGLE DEVELOPER CHALLENGE SCHOLARSHİP    - 2017/2018" wrapping="true"/>
+                        <Label text="TURKCELL GELECEĞİ YAZAN KADINLAR - İL EĞİTİMİ" wrapping="true"/>   
+                        <Label text="TURKCELL GELECEĞİ YAZANLAR - ANDROİD(101,201,301,401)" wrapping="true"/>                        
+                    </VBox>
+                </VBox>
+                <List items="{/UserListModel}">
+                        <CustomListItem class="right-side-listStyle sapUiLargeMarginBegin " >
+                        <VBox width="100%"  height="3px" alignItems="Start" justifyContent="Center" >
+                              <Image  src="resources/rectangle.png" class="rectanglebackground"/>    
+                                </VBox>
+                        <VBox alignItems="Center" height="2px"  justifyContent="Center" >
+                            <Label text="{name}" design="Bold"  class="position"/>
+              
+                        </VBox>
+                        </CustomListItem>
+                    </List>
+                <VBox width="45%" alignItems="Stretch" justifyContent="Start" class="ride-side-view-padding">
+                    <VBox width="100%" alignItems="Start" justifyContent="Start">
+                        <Label text="EĞİTİM" design="Bold"/>
+                        <Label text="Cumhuriyet Üniversitesi Bilgisayar Mühendisliği(Örgün Öğretim)   "/>
+                    </VBox>
+                   
+                            <VBox width="100%" alignItems="Stretch" justifyContent="Start" class="sapUiSmallMarginTop">
+                        <VBox width="100%" alignItems="Stretch" justifyContent="Start" class="sapUiMediumMarginBottom">
+                            <Label text="Unity " design="Bold"/>
+                            <core:HTML content="
+                                &lt;div class=&quot;div-lake-okey&quot;&gt;
+                                &lt;/div&gt;
+                            "/>
+                        </VBox>
+                        <VBox width="100%" alignItems="Stretch" justifyContent="Start" class="sapUiMediumMarginBottom">
+                            <Label text="ANDROİD " design="Bold"/>
+                            <core:HTML content="
+                                &lt;div class=&quot;div-howell-fort&quot;&gt;
+                                &lt;/div&gt;
+                            "/>
+                        </VBox>
+                        <VBox width="100%" alignItems="Stretch" justifyContent="Start" class="sapUiMediumMarginBottom">
+                            <Label text="Adobe Illustrator" design="Bold"/>
+                            <core:HTML content="
+                                &lt;div class=&quot;div-east&quot;&gt;
+                                &lt;/div&gt;
+                            "/>
+                        </VBox>
+                        <VBox width="100%" alignItems="Stretch" justifyContent="Start" class="sapUiMediumMarginBottom">
+                            <Label text="Adobe Photoshop " design="Bold"/>
+                            <core:HTML content="
+                                &lt;div class=&quot;div-ville&quot;&gt;
+                                &lt;/div&gt;
+                            "/>
+                        </VBox>
+                    </VBox>
+                     
+                </VBox>
+            </HBox>
+        </VBox>
+    </Dialog>
+</core:FragmentDefinition>

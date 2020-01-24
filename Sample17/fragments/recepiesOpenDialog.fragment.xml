@@ -1,0 +1,131 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        showHeader="false"
+        modal="true"
+        contentWidth="700px"
+        stretchOnPhone="true"
+        showCloseButton="false"
+        horizontalScrolling="false"
+        verticalScrolling="false"
+        class="sapUiNoContentPadding ">
+        <List id="userList" items="{/UserListModel}">
+            <CustomListItem class="cooklistbackground" type="Active">
+                <HBox width="100%" alignItems="Start" justifyContent="Start">
+                    <VBox width="100%" alignItems="Start" justifyContent="Start">
+                        <Image src="{cookImage}" width="100%"/>
+                        <!-- <Button icon="resources/leftarrow.png" type="Transparent"
+                        press="prevDialogOpen" class="cookbutton" /> -->
+                    </VBox>
+
+                    <VBox alignItems="Start" justifyContent="Start">
+                        <HBox height="260px" alignItems="End" justifyContent="SpaceBetween">
+                            <Button
+                                icon="resources/leftarrow.png"
+                                type="Transparent"
+                                press="prevDialogOpen"/>
+                        </HBox>
+                    </VBox>
+                    <VBox
+                        width="100%"
+                        alignItems="Stretch"
+                        justifyContent="Stretch"
+                        class="sapUiTinyMarginBegin sapUiTinyMarginBottom sapUiTinyMarginTop">
+                        <!-- <HBox alignItems="End" justifyContent="SpaceBetween"> <Button
+                        icon="resources/leftarrow.png" type="Transparent" /> <Button
+                        icon="resources/rightarrow.png" type="Transparent" /> </HBox> -->
+                        <VBox
+                            width="100%"
+                            alignItems="Start"
+                            justifyContent="Start"
+                            class="sapUiSmallMarginBegin">
+                            <Label
+                                width="100%"
+                                text="{cookingTime}"
+                                class="sapUiSmallMarginTop cooktextNormalSize"/>
+                            <HBox alignItems="SpaceBetween" justifyContent="SpaceBetween">
+                                <Label
+                                    width="100%"
+                                    text="{cookName}"
+                                    class="cooktextsize sapUiLargeMarginEnd "/>
+                                <HBox alignItems="End" justifyContent="End">
+                                    <Button
+                                        icon="resources/restaurant.png"
+                                        type="Transparent"
+                                        press="ingredientDialogOpen"
+                                        class="sapUiLargeMarginBegin "/>
+                                </HBox>
+                            </HBox>
+
+                        </VBox>
+                        <HBox
+                            width="100%"
+                            alignItems="Start"
+                            justifyContent="Start"
+                            class="sapUiSmallMarginBegin sapUiTinyMarginTop">
+                            <VBox alignItems="Start" justifyContent="Start" class="levelColorIcon">
+                                <f:Avatar src="{chef/image}" displaySize="S"/>
+                            </VBox>
+                            <VBox alignItems="Start" justifyContent="Start">
+                                <Label
+                                    text="{chef/name}"
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop cooktextNameSizeBig"/>
+                                <VBox alignItems="Start" justifyContent="Start">
+                                    <Label
+                                        text="{chef/recepieCount}"
+                                        class="cooktextNameSizeSmall sapUiTinyMarginBegin"/>
+                                </VBox>
+                            </VBox>
+                        </HBox>
+                        <VBox
+                            width="90%"
+                            alignItems="Center"
+                            justifyContent="Center"
+                            class="sapUiSmallMarginBegin sapUiSmallMarginTop  cooktextNormalSize">
+                            <Text width="100%" text="{description}"/>
+                        </VBox>
+                        <!-- <HBox width="100%" alignItems="End" justifyContent="SpaceBetween"> <Button
+                        icon="resources/leftarrow.png" type="Transparent" /> <Button
+                        icon="resources/rightarrow.png" type="Transparent" /> </HBox> -->
+                        <HBox
+                            width="100%"
+                            alignItems="Start"
+                            justifyContent="Start"
+                            class="sapUiSmallMarginBegin sapUiSmallMarginTop">
+                            <f:Avatar
+                                src="{assistants/firstAssistantImg}"
+                                displaySize="XS"
+                                class="sapUiSmallMarginEnd"/>
+                            <f:Avatar
+                                src="{assistants/secondAssistantImg}"
+                                displaySize="XS"
+                                class="sapUiSmallMarginEnd"/>
+                            <f:Avatar src="{assistants/thirdAssistantImg}" displaySize="XS"/>
+                        </HBox>
+                        <HBox alignItems="Center" class="sapUiSmallMarginTop ">
+                            <Image src="{like}" width="40%" class="sapUiSmallMarginBegin"/>
+                            <HBox width="100%" alignItems="Start" justifyContent="Start">
+                                <Label text="{likecount}" class="cooktextNormalSize"/>
+                            </HBox>
+                        </HBox>
+
+                    </VBox>
+                    <VBox alignItems="Start" justifyContent="Start">
+                        <HBox height="260px" alignItems="End" justifyContent="SpaceBetween">
+                            <Button
+                                icon="resources/rightarrow.png"
+                                type="Transparent"
+                                press="nextDialogOpen"/>
+                        </HBox>
+                    </VBox>
+
+                </HBox>
+
+            </CustomListItem>
+        </List>
+    </Dialog>
+</core:FragmentDefinition>

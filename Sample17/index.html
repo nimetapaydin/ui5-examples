@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <title>SAPUI5 Learning</title>
+        <link href="resources/style.css" rel="stylesheet"/>
+        <script
+            id="sap-ui-bootstrap"
+            src="https://sapui5.hana.ondemand.com/resources/sap-ui-cachebuster/sap-ui-core.js"
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-resourceroots='{
+                "HelloWorld": "./"
+            }'>
+        </script>
+        <script>            
+            sap.ui.getCore().attachInit(function () {
+                new sap.ui.core.ComponentContainer({
+                    name: "HelloWorld",
+                    height:"100%"
+                }).placeAt("content");
+            });
+        </script>
+    </head>
+    <body id="content" class="sapUiBody sapUiSizeCompact"></body>
+</html>
+<!-- var cookArray = [
+    {
+        "image":"",
+        "cookingTime":"",
+        "cookName":"",
+        "chef":{
+            "name":"",
+            "recepieCount":""
+        },
+        "ingredients":"",
+        "like":"",
+        "assistants":[
+            "firstAssistantImg":"",
+            "secondAssistantImg":"",
+            "thirdAssistantImg":"",
+        ]
+    },
+] -->
