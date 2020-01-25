@@ -1,0 +1,71 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        showHeader="false"
+        id="dialog"
+        modal="true"
+        contentWidth="700px"
+        stretchOnPhone="true"
+        showCloseButton="true">
+
+        <HBox width="100%" alignItems="Start" justifyContent="Stretch">
+            <List items="{/UserListModel}">
+                <CustomListItem class="sapUiLargeMarginBegin  ">
+                    <HBox width="100%" alignItems="Start" justifyContent="Stretch">
+                        <!-- <VBox width="100%" alignItems="Start" justifyContent="Center"> <Image
+                        width="100px" src="{banner}"/> </VBox> -->
+                        <VBox
+                            width="100%"
+                            alignItems="Start"
+                            justifyContent="Center"
+                            class="sapUiSmallMarginBottom cardpadding ">
+                            <HBox class="card" alignItems="Center" justifyContent="Center" width="100%" height="100%">
+                                <Image src="{banner}"/>
+                            </HBox>
+                            <Label text="{movieName}" design="Bold" class="movinamelocation "/>
+                            <!-- <core:HTML
+                                content="
+                                &lt;div class=&quot;card&quot;&gt;
+                                &lt;img width=&quot;150px&quot; src=&quot;{${path:'/banner'}}&quot; /&gt;
+                                &lt;/div&gt;"/> -->
+
+                            <Label text="{movieName}" design="Bold" class="movinamelocation "/>
+                        </VBox>
+                        <HBox width="100%" alignItems="Start" justifyContent="Stretch">
+                            <VBox
+                                width="100%"
+                                alignItems="Start"
+                                justifyContent="Start"
+                                class=" sapUiLargeMarginBegin sapUiSmallMarginTop ">
+                                <Label text="{movieName}" design="Bold" class="sapUiSmallMarginTop"/>
+                                <RatingIndicator
+                                    id="ratingIndicator"
+                                    maxValue="5"
+                                    value="4"
+                                    iconSize="20px"
+                                    tooltip="Rating Tooltip"
+                                    change="voteUser"
+                                    class="sapUiSmallMarginTop"/>
+                                <Label text="{moviePrice}" design="Bold" class="sapUiSmallMarginTop"/>
+                            </VBox>
+                            <HBox width="100%" alignItems="Start" justifyContent="Start" class="sapUiSmallMarginTop">
+                                 <Image src="resources/hearts.png" width="20px" class="sapUiSmallMarginTop"/>
+                                 <Image src="resources/share.png" width="20px" class="sapUiSmallMarginTop sapUiSmallMarginBegin"/>
+                            </HBox>
+
+                        </HBox>
+                    </HBox>
+                </CustomListItem>
+            </List>
+        </HBox>
+        <beginButton>
+            <Button text="Ekle" type="Emphasized" press="onPopupOpen"/>
+        </beginButton>
+
+    </Dialog>
+
+</core:FragmentDefinition>
