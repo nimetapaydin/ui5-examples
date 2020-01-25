@@ -1,0 +1,208 @@
+<core:FragmentDefinition
+    height="100%"
+    width="100%"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        showHeader="false"
+        modal="true"
+        stretchOnPhone="true"
+        showCloseButton="false"
+        horizontalScrolling="false"
+        verticalScrolling="false"
+        contentWidth="85%"
+        contentHeight="60%"
+        class="sapUiNoPadding sapUiNoMargin sapUiNoContentPadding">
+        <customHeader >
+            <Bar>
+                <contentMiddle>
+                    <HBox
+                        width="100%"
+                        alignItems="Center"
+                        justifyContent="Center"
+                        class="sapUiNoMargin">
+                        <Text text="Add Cost Window Cost Save" class="sapUiLargeMarginBegin"/>
+                    </HBox>
+                </contentMiddle>
+                <contentRight>
+                    <HBox width="100%" alignItems="End" justifyContent="End">
+                        <Button
+                            text="Add Cost Window Cost Close"
+                            type="Transparent"
+                            icon="sap-icon://sys-cancel"
+                            class="sapUiNoMargin"/>
+                    </HBox>
+                </contentRight>
+            </Bar>
+        </customHeader>
+        <l:Grid hSpacing="1" vSpacing="0" defaultSpan="L6 M12 S12">
+            <IconTabBar
+                height="100%"
+                backgroundDesign="Transparent"
+                applyContentPadding="false"
+                expanded="{device>/isNoPhone}"
+                stretchContentHeight="true"
+                class="sapUiResponsiveContentPadding">
+                <items>
+                    <IconTabFilter text="Add Cost Window Cost ">
+                        <l:FixFlex class="fixFlexVertical " fixFirst="false">
+
+                            <l:fixContent>
+                                <VBox alignItems="Start" justifyContent="Start">
+                                <Label text="Add Cost Window Cost List" class="sapUiTinyMarginBottom" />
+                                    <Table
+                                        id="idProductsTable"
+                                        inset="false"
+                                        items="{/UserListModel}"
+                                        >
+                                        <columns>
+                                            <Column width="12em">
+                                                <Text text="1"/>
+                                            </Column>
+                                            <Column minScreenWidth="Tablet" demandPopin="true">
+                                                <Text text="2"/>
+                                            </Column>
+                                            <Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+                                                <Text text="3"/>
+                                            </Column>
+                                            <Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+                                                <Text text="4"/>
+                                            </Column>
+                                            <Column hAlign="End">
+                                                <Text text="5"/>
+                                            </Column>
+                                        </columns>
+                                        <items>
+                                            <ColumnListItem>
+                                                <cells>
+                                                    <ObjectIdentifier title="{1}"/>
+                                                    <Text text="{2}"/>
+                                                    <Text text="{3}"/>
+                                                    <ObjectNumber
+                                                       unit="{4}"
+                                                    />
+                                                    <ObjectNumber
+                                                        number="{5}"   
+                                                    />      
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </VBox>
+                            </l:fixContent>
+
+                            <l:flexContent>
+                                <ScrollContainer
+                                    height="100%"
+                                    width="100%"
+                                    horizontal="false"
+                                    vertical="true"
+                                    focusable="true">
+                                    <VBox alignItems="Stretch" justifyContent="Start" width="100%" heigth="100%">
+                                        <HBox
+                                            width="100%"
+                                            alignItems="Start"
+                                            justifyContent="Start"
+                                            class="sapUiSmallMarginBottom">
+                                            <Button type="Default" icon="sap-icon://save" />
+                                            <Button
+                                                type="Default"
+                                                icon="sap-icon://sys-cancel"
+                                                class="sapUiTinyMarginBegin"/>
+                                            <Button type="Default" icon="sap-icon://simulate" class="sapUiTinyMarginBegin"/>
+                                        </HBox>
+                                        <HBox width="100%" alignItems="Start" justifyContent="Stretch">
+                                            <HBox alignItems="Start" justifyContent="Stretch" width="80%">
+                                                <HBox width="100%" alignItems="Start" justifyContent="Stretch">
+                                                    <VBox
+                                                        width="100%"
+                                                        alignItems="Stretch"
+                                                        justifyContent="Stretch"
+                                                        class="sapUiLargeMarginEnd">
+                                                        <Label text="Add Cost Window Cost General Information " width="310px"/>
+                                                        <HBox alignItems="Center" justifyContent="Start" class="sapUiTinyMarginTop">
+                                                            <Label text="Add Cost Window Cost Type " width="200px"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <HBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Select width="70px" class="sapUiTİnyMarginEnd"/>
+                                                            </HBox>
+                                                            <HBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Select width="70px" class="sapUiSmallMarginBegin sapUiSmallMarginEnd"/>
+                                                            </HBox>
+                                                            <Label text="Add Cost Window Km " width="150px"/>
+                                                            <Input width="70px"/>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Start" class="sapUiTinyMarginTop">
+                                                            <Label text="Add Cost Window Explanation" width="200px"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Input
+                                                                    editable="true"
+                                                                    showValueHelp="true"
+                                                                    valueHelpOnly="true"
+                                                                    valueHelpRequest="handleValueHelp"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Start" class="sapUiTinyMarginTop">
+                                                            <Label text="Add Cost Window..." width="200px"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <HBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Input
+                                                                    width="50px"
+                                                                    editable="false"
+                                                                    showValueHelp="true"
+                                                                    valueHelpOnly="true"
+                                                                    valueHelpRequest="handleValueHelp"/>
+                                                                <Select class="sapUiSmallMarginBegin sapUiSmallMarginEnd"/>
+                                                                <Text text="Add Cost Window Amount To Be Paid Unable to determine"/>
+                                                            </HBox>
+                                                        </HBox>
+                                                    </VBox>
+                                                    <VBox
+                                                        width="100%"
+                                                        alignItems="End"
+                                                        justifyContent="End"
+                                                        class="sapUiTinyMarginBegin">
+                                                        <HBox alignItems="End" justifyContent="End">
+                                                            <Label text="Add Cost Window Bill Information" width="210px"/>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Stretch">
+                                                            <HBox width="100%" alignItems="Center" justifyContent="Stretch">
+                                                                <CheckBox text="Add Cost Window" selected="true" class="sapUiSmallMarginEnd"/>
+                                                                <Text text="Add Cost Window Plug Date" textAlign="Begin" width="200px"/>
+                                                                <Text width="10px" text=" : "/>
+                                                                <DatePicker
+                                                                    width="200px"
+                                                                    dateValue="{/date}"
+                                                                    placeholder="Add Cost Window Place"/>
+                                                            </HBox>
+                                                        </HBox>
+                                                        <HBox alignItems="Center" justifyContent="Stretch" class="sapUiTinyMarginTop">
+                                                            <Label text="Add Cost Window Explanation" width="200px"/>
+                                                            <Label width="10px" text=" : "/>
+                                                            <VBox width="100%" alignItems="Stretch" justifyContent="Stretch">
+                                                                <Input width="200px"/>
+                                                            </VBox>
+                                                        </HBox>
+                                                    </VBox>
+                                                </HBox>
+                                            </HBox>
+                                        </HBox>
+                                    </VBox>
+                                </ScrollContainer>
+                            </l:flexContent>
+                        </l:FixFlex>
+                    </IconTabFilter>
+                    <IconTabFilter text="Add Cost Window Cost Activity">
+                        <Text text="Coming Soon ..."/>
+                    </IconTabFilter>
+                </items>
+
+            </IconTabBar>
+        </l:Grid>
+
+    </Dialog>
+</core:FragmentDefinition>
