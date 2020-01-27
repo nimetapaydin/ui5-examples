@@ -49,7 +49,6 @@
                 <items>
                     <IconTabFilter text="Add Cost Window Cost ">
                         <l:FixFlex class="fixFlexVertical " fixFirst="false">
-
                             <l:fixContent>
                                 <VBox alignItems="Start" justifyContent="Start">
                                 <Label text="Add Cost Window Cost List" class="sapUiTinyMarginBottom" />
@@ -200,9 +199,7 @@
                         <Text text="Coming Soon ..."/>
                     </IconTabFilter>
                 </items>
-
             </IconTabBar>
         </l:Grid>
-
     </Dialog>
 </core:FragmentDefinition>
