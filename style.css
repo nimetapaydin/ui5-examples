@@ -59,10 +59,6 @@ z-index: 1;
 -webkit-transform: skewY(-5deg) scale(1.5);
         transform: skewY(-5deg) scale(1.5);
 }
-/* .page-title{
-  color: linear-gradient(-45deg,#f403d1,#64b5f6);
- 
-} */
 .title .fa{
   color:#fff;
   font-size: 60px;

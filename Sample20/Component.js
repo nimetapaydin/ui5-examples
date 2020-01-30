@@ -5,10 +5,10 @@ sap.ui.define(
   ],
   function(UIComponent, JSONModel) {
     "use strict";
-    return UIComponent.extend("Hospital.Component", {
+    return UIComponent.extend("HelloWorld.Component", {
       metadata: {
         rootView: {
-          viewName: "Hospital.view.Clinic",
+          viewName: "HelloWorld.view.Login",
           type: "XML",
           async: true,
           id: "app"
@@ -16,6 +16,8 @@ sap.ui.define(
       },
       init: function() {
         UIComponent.prototype.init.apply(this, arguments);
+        // var oModel = new JSONModel(oData);
+        // this.setModel(oModel);
       }
     });
   }

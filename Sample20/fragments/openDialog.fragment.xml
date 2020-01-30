@@ -1,0 +1,19 @@
+<core:FragmentDefinition
+    height="100%"
+    width="100%"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        showHeader="false"
+        stretchOnPhone="true"
+        showCloseButton="false"
+        horizontalScrolling="false"
+        verticalScrolling="false"
+        contentWidth="60%"
+        contentHeight="70%"
+        class="sapUiNoMargin sapUiNoContentPadding">
+    </Dialog>
+</core:FragmentDefinition>

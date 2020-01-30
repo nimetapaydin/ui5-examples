@@ -1,0 +1,195 @@
+<mvc:View
+    height="100%"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.f">
+    <App id="app">
+        <Page showHeader="true" title="Öğrenci Bilgileri" class="sapUiResponsiveContentPadding">
+            <content>
+                <VBox width="100%" height="100%" alignItems="Stretch" justifyContent="Stretch">
+                    <HBox width="100%" alignItems="Center" justifyContent="Start">
+                        <f:Avatar
+                            src="https://randomuser.me/api/portraits/men/11.jpg"
+                            displaySize="XL"/>
+                        <HBox width="100%" alignItems="Start" justifyContent="Start">
+                            <VBox
+                                justifyContent="Center"
+                                alignItems="Start"
+                                class="sapUiSmallMarginBegin">
+                                    <Text text="Mert Black" class="user-name-label"/>
+                                    <Text text="00100226"/>
+                                    <Text text="Üniversite 4.Sınıf"/>
+                                    <Text text="US"/>
+                            </VBox>
+                            <VBox
+                                justifyContent="Center"
+                                alignItems="Start"
+                                class="sapUiMediumMarginBegin sapUiTinyMarginTop">
+                                    <VBox>
+                                        <Text text="Mail Address"/>
+                                        <Link text="Mertblack@oxford.com"/>
+                                    </VBox>
+                                    <VBox>
+                                        <Text text="Phone Number"/>
+                                        <Link text="+1-550-555 4235"/>
+                                    </VBox>
+                            </VBox>
+                        </HBox>
+                    </HBox>
+                    <VBox alignItems="Stretch" justifyContent="Start" class="sapUiSmallMarginTop">
+                        <HBox alignItems="Center" justifyContent="Start" height="40px" class="info-panel-header sapUiSmallMarginBottom">
+                            <core:Icon src="sap-icon://personnel-view" size="20px" color="#646464" class="header-bar-icon"/>
+                            <Text text="Kişisel Bilgiler" class="sapUiTinyMarginBegin"/>
+                        </HBox>
+                        <l:Grid
+                            hSpacing="1"
+                            vSpacing="1"
+                            defaultSpan="L6 M6 S12">
+
+                                <!-- LeftColumn -->
+                                <VBox alignItems="Stretch" justifyContent="Start">
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Öğrenci ID" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Öğrenci No" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Öğrenci Adı" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Öğrenci Soyadı" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="TC Kimlik No" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label width="140px"/>
+                                        <Label width="10px"/>
+                                        <CheckBox text="Şifre kayıtlı mı ?" selected="true"/>
+                                    </HBox>
+                                </VBox>
+
+                                <!-- RightColumn -->
+                                <VBox alignItems="Stretch" justifyContent="Start">
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Şifre" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Pin Kodu" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label width="140px"/>
+                                        <Label width="10px"/>
+                                        <CheckBox text="Batch alanı" selected="true"/>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Öğrenci Kodu" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Öğrenci Sertifika Kodu" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Öğrenci Kullanıcı Adı" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Öğrenci Mail Bilgisi" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                    <HBox alignItems="Center" justifyContent="Start">
+                                        <Label text="Öğrenci Tel Bilgisi" width="140px"/>
+                                        <Label text=":" width="10px"/>
+                                        <VBox width="100%" alignItems="Stretch" justifyContent="Stretch" class="sapUiTinyMarginBegin">
+                                            <Input/>
+                                        </VBox>
+                                    </HBox>
+                                </VBox>
+                        </l:Grid>
+                        <VBox>
+                            <HBox alignItems="Center" justifyContent="Start" height="40px" class="info-panel-header header-school sapUiSmallMarginBottom">
+                                <core:Icon src="sap-icon://notes" size="20px" color="#646464" class="header-bar-icon"/>
+                                <Text text="Okul Listesi" class="sapUiTinyMarginBegin"/>
+                            </HBox>
+                            <List class="school-list-style">
+                                <CustomListItem>
+                                    <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween">
+                                        <HBox alignItems="Center" justifyContent="Start">
+                                            <core:Icon src="sap-icon://building" size="24px" color="#646464" class="sapUiTinyMarginBegin"/>
+                                            <VBox alignItems="Start" justifyContent="Center" class="sapUiSmallMarginBegin">
+                                                <Text text="Key" class="school-id"/>
+                                                <Text text="Text"/>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                </CustomListItem>
+                                <CustomListItem>
+                                    <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween">
+                                        <HBox alignItems="Center" justifyContent="Start">
+                                            <core:Icon src="sap-icon://building" size="24px" color="#646464" class="sapUiTinyMarginBegin"/>
+                                            <VBox alignItems="Start" justifyContent="Center" class="sapUiSmallMarginBegin">
+                                                <Text text="Key" class="school-id"/>
+                                                <Text text="Info Text"/>
+                                            </VBox>
+                                        </HBox>
+                                    </HBox>
+                                </CustomListItem>
+                            </List>
+                        </VBox>
+                    </VBox>
+                </VBox>
+            </content>
+            <footer>
+                <Toolbar>
+                    <ToolbarSpacer/>
+                        <Button text="Kaydet" type="Accept" width="120px"/>
+                    <ToolbarSpacer/>
+                </Toolbar>
+            </footer>
+        </Page>
+    </App>
+</mvc:View>

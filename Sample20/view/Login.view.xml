@@ -1,0 +1,72 @@
+<mvc:View
+    height="100%"
+    controllerName="HelloWorld.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core">
+    <App id="app">
+        <Page showHeader="false" showFooter="false" class="sapUiNoContentPadding">
+            <VBox alignItems="Center" justifyContent="Start" width="100%" height="100%">
+                <VBox
+                    alignItems="Center"
+                    justifyContent="Center"
+                    width="100%"
+                    height="25%"
+                    class="header-section">
+                    <Label text="UI5 EXAMPLES" class="title"/>
+                    <core:HTML
+                        content="
+                        &lt;span class=&quot;app-name&quot;&gt;
+                           Bu
+                            &lt;span class=&quot;app-description&quot;&gt;
+                                Uygulama ile Örnekleri listeleyebilirsiniz.
+                            &lt;/span&gt;
+                        &lt;/span&gt;
+                    "/>
+                </VBox>
+                <VBox
+                    alignItems="Stretch"
+                    justifyContent="Start"
+                    width="100%"
+                    height="75%"
+                    class="content-section">
+                    <VBox class="tab-container" alignItems="Center" justifyContent="Start">
+                         <IconTabBar select="searchCriteriaTabSelection" headerBackgroundDesign="Transparent" class="sapUiResponsiveContentPadding selection-criteria-tabs">
+                            <items>
+                                <IconTabFilter text="Örnekler"></IconTabFilter>
+                                <IconTabFilter text="Uygulamalar"></IconTabFilter>
+                                <IconTabFilter text="Diğer"></IconTabFilter>
+                                <IconTabFilter text="Menu"></IconTabFilter>
+                            </items>
+                        </IconTabBar>
+                    </VBox>
+                   	<VBox alignItems="Center" width="100%">
+                        <VBox class="searchFieldContainer sapUiSmallMargin" width="700px" height="50px" alignItems="Center" justifyContent="Center">
+                            <HBox    alignItems="Center" justifyContent="Center"> 
+                                <Input id="search" width="600px"/> 
+                                <core:Icon src="sap-icon://search" color="{color}" size="15px" class="sapUiTinyMarginBegin"/>
+                            </HBox>  
+                        </VBox>
+                        <VBox alignItems="Center" width="100%">
+                            <List id="userList" items="{/SearchCriteriaListItems}">
+                                <items>
+                                <CustomListItem class="searchListItem">
+                                    <HBox width="100%" alignItems="Center" justifyContent="Center" class="sapUiSmallMarginBegin " >
+                                     <core:Icon src="sap-icon://feeder-arrow" color="{color}" size="10px"/>
+                                    <VBox width="100%" alignItems="Center" justifyContent="Center">
+                                        <Label  width="600px" textAlign="Start" text="{name}" class="nameColor" />
+                                        <Label  width="600px" textAlign="Start" text="{comment}" />
+                                    </VBox>
+                                    <Button  width="60px" icon="sap-icon://decline"  type="Transparent" class="sapUiSmallMarginEnd" press="deleteItem" />
+                                    </HBox>  
+                                </CustomListItem>
+                                </items>
+                            </List>
+                         </VBox>
+                    </VBox>
+                </VBox>
+            </VBox>
+        </Page>
+    </App>
+</mvc:View>

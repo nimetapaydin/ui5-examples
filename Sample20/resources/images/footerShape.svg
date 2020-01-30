@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <svg
+    version="1.1"
+    id="Layer_1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    width="100%"
+    height="100%"
+    preserveAspectRatio="none">
+    <style type="text/css">
+        .footerPath{
+            fill:#0071BC;
+        }
+    </style>
+    <path
+        class="footerPath"
+        d="M-0.5,455.5c0,0,304-234,583-226s441-229,441-229v455H-0.5z"/>
+</svg> -->
+
+<svg
+   version="1.1"
+   id="no-aspect-ratio"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   x="0px"
+   y="0px"
+  width="100%"
+  height="100%"
+   viewBox="0 0 1000 100"
+   preserveAspectRatio="none">
+   <!-- <polygon
+      fill="#0071BC"
+      points="100,100 0,100 0,0 "/>
+   <!-- <path -->
+        <!-- d="M-0.5,455.5c0,0,304-234,583-226s441-229,441-229v455H-0.5z"/> -->
+<!--         
+         <path
+        d="M-0,490.0c0,0,304-300,543-206s591-269,471-209v870H-0z"/> -->
+</svg>

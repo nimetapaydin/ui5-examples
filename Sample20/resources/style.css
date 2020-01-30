@@ -1,0 +1,59 @@
+body,html{
+   font-family: 'Open Sans', sans-serif !important;
+}
+.header-section{
+    background: #266d8f !important;
+}
+.content-section{
+    background: #f9f9f9 !important;
+}
+.title{
+    font-size:30px !important;
+    color:#fff !important;
+}
+.app-name{
+    color:#bcf2ff;
+    font-size: 20px;
+}
+.app-description{
+    color:#fff;
+    font-size: 20px;
+}
+.selection-criteria-tabs .sapMITBContent{
+    border:0 !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow:unset !important;
+}
+.selection-criteria-tabs .sapMITH{
+    border:0 !important;
+    box-shadow:unset !important;
+}
+.tab-container{
+    background: #edfbff !important;
+}
+.searchFieldContainer{
+    background: #fff !important;
+    -webkit-box-shadow: 0px 12px 20px -15px rgba(77,77,77,1);
+    -moz-box-shadow: 0px 12px 20px -15px rgba(77,77,77,1);
+    box-shadow: 0px 12px 20px -15px rgba(77,77,77,1);
+    border-radius: 20px;
+}
+.searchFieldContainer .sapMSFF{
+    border:0 !important;
+    background: transparent !important;
+    user-select: none !important;
+}
+.nameColor{
+    -webkit-text-fill-color: #346187 !important;
+    font-weight:bold !important;
+}
+.searchListItem.sapMLIB{
+    padding: 7px !important;
+}
+.searchBackground{
+    background: #4d8ec0 !important;
+}
+.iconSize{
+    size: 5px;
+}

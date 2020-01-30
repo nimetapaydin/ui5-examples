@@ -5,19 +5,21 @@
         <meta charset="utf-8">
         <title>SAPUI5 Learning</title>
         <link href="resources/style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
         <script
             id="sap-ui-bootstrap"
             src="https://sapui5.hana.ondemand.com/resources/sap-ui-cachebuster/sap-ui-core.js"
             data-sap-ui-theme="sap_belize"
             data-sap-ui-libs="sap.m"
             data-sap-ui-resourceroots='{
-                "Hospital": "./"
+                "HelloWorld": "./"
             }'>
         </script>
         <script>
             sap.ui.getCore().attachInit(function () {
                 new sap.ui.core.ComponentContainer({
-                    name: "Hospital",
+                    name: "HelloWorld",
                     height:"100%"
                 }).placeAt("content");
             });
@@ -25,3 +27,5 @@
     </head>
     <body id="content" class="sapUiBody sapUiSizeCompact"></body>
 </html>
+
+<!-- <core:Icon src="sap-icon://search" color="{color}" size="15px" class="sapUiTinyMarginBegin"/> -->
