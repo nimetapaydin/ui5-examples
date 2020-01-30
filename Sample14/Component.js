@@ -5,10 +5,10 @@ sap.ui.define(
   ],
   function(UIComponent, JSONModel) {
     "use strict";
-    return UIComponent.extend("Hospital.Component", {
+    return UIComponent.extend("School.Component", {
       metadata: {
         rootView: {
-          viewName: "Hospital.view.Clinic",
+          viewName: "School.view.School",
           type: "XML",
           async: true,
           id: "app"

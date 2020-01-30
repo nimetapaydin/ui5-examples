@@ -111,7 +111,7 @@
                                     <HBox alignItems="Center" justifyContent="Start">
                                         <Label width="140px"/>
                                         <Label width="10px"/>
-                                        <CheckBox text="Batch alanı" selected="true"/>
+                                        <CheckBox text="İlgi alanı" selected="true"/>
                                     </HBox>
                                     <HBox alignItems="Center" justifyContent="Start">
                                         <Label text="Öğrenci Kodu" width="140px"/>
