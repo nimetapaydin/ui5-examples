@@ -74,6 +74,9 @@ Diğer öğeler temel tasarım
 öğelerinden olup Label,İnput,Select,Button ve CheckBox gibi örnekler verilebilir.
 
 ## Bu Reponun Amacı Nedir?
+
+![uı5](https://raw.githubusercontent.com/nimetapaydin/ui5-examples/master/orneklerinekranresimleri/uı5.gif)
+
 SAPUI5 ile yapılabilecek bazı tasarım örneklerini sizlerle paylaşmak.Burada bulunan örnekler detaylı projeler değil hemen hemen hepsi
 tasarım için oluşturulmuş basit anlaması kolay örneklerden oluşmakta.
 
